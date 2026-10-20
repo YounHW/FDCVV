@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this implementation or its supporting data, please cite this software and the upstream framework identified in README.md."
 type: software
-title: "FDCVV: Fast Dynamic Cross-Validation Voronoi Adaptive Sampling"
+title: "FDCVV: Adaptive Sampling with Fast LOOCV and Voronoi Partitioning"
 authors:
   - family-names: Yang
     given-names: Haowei

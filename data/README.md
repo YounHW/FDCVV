@@ -1,6 +1,7 @@
-# CM-26-0575 machine-readable supplementary data
+# FDCVV Benchmark and Finite Element Data
 
-This package accompanies the adopted FDCVV manuscript revision. Start with
+This directory contains numerical benchmark, ranking, computational-cost and
+finite element datasets for FDCVV and comparison methods. Start with
 `file_index.csv` for relative filenames, row counts, keys, figure mappings and
 SHA256 hashes; `data_dictionary.csv` lists every column, storage type, unit and
 observed missing count. `provenance.csv` binds every packaged table to its source.
@@ -50,7 +51,7 @@ mean_gap_pct. Each metric has its own minimum. Descriptive rank ranks these
 summaries. In paired ablation tables, difference is control minus Full and
 relative_pct is 100*(control mean/Full mean-1). Wins mean lower Full NRMSE.
 The Holm suffix adjusts across the 21 ablation comparisons. CI low/high fields
-are pointwise 95% bootstrap bounds; see the Numerical supplement for resampling.
+are pointwise 95% bootstrap bounds.
 Mean, median, min and max suffixes describe the named quantity; std is sample
 standard deviation. Summary n is the number of trajectories in that group.
 LOOCV exact denotes the saved reconstruction reference; fast denotes the matrix
@@ -76,8 +77,7 @@ attempts are excluded from the adopted cost. Nine warmups are excluded.
 ## Finite element data
 
 Training and validation are separate sets of 30 and 10 points. TD is delay in
-seconds; OMEGA2 is propellant mass in kg; MH is piston mass in kg (M_C in the
-manuscript). response and observed/predicted fields are in metres; suffix _um
+seconds; OMEGA2 is propellant mass in kg; MH (also denoted M_C) is piston mass in kg. response and observed/predicted fields are in metres; suffix _um
 uses micrometres and prediction_variance uses square metres.
 validation10.csv is the final 30-point model; stage_validation60.csv contains
 six stages (5,10,15,20,25,30) on the same ten validation locations.
@@ -96,5 +96,6 @@ here. Source exports and original hash columns are preserved. The old
 stopping_reference_outcomes270.csv belongs to another configuration and is not
 part of this adopted-configuration package. Historical FE bootstrap exports
 are likewise superseded by the current recomputed interval table.
-The manuscript and three supplements provide formulas and analysis protocols;
-this archive documents their tabular evidence and is not a code repository.
+The tables retain the exported observations, summary statistics and source
+identifiers. The repository-level README describes the implementation and
+verification procedures.
