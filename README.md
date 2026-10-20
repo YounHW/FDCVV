@@ -1,11 +1,12 @@
-# CM-26-0575 Code and Data Supplement
+# FDCVV: Adaptive Sampling with Fast LOOCV and Voronoi Partitioning
 
-This package supplies the adopted FDCVV implementation, numerical comparison
-methods, fixed common test sets, and the machine-readable manuscript data.
+This repository provides the FDCVV adaptive sampling implementation, numerical
+comparison methods, fixed test sets, and machine-readable benchmark and
+finite element results.
 Download the pinned upstream dependency first using the instructions below.
 Use this folder as the MATLAB current directory.
 
-## Adopted algorithm
+## Algorithm configuration
 
 FDCVV retains Fast LOOCV and Voronoi screening. For enrichment step `m=1:30`,
 `q=(m-1)/30` determines K: 4 for steps 1–10, 3 for 11–15, and 2 for 16–30.
@@ -62,7 +63,7 @@ The original framework's MIT notice is retained in
 `THIRD_PARTY_LICENSE_Fuhg_MIT.txt` for modified third-party files. Cite Fuhg,
 Fau and Nackenhorst, "State-of-the-Art and Comparative Review of Adaptive
 Sampling Methods for Kriging" when using the framework. The local LC2015
-directory supplies the single-fidelity method and adapter used in this study.
+directory supplies a single-fidelity implementation and its framework adapter.
 
 ## Quick verification
 
@@ -123,7 +124,7 @@ Saved data reports remain unchanged when a new trajectory is run.
 ## Data and provenance
 
 `data/README.md`, `data/file_index.csv` and `data/data_dictionary.csv` describe
-36 CSV data tables, their units, keys and manuscript mappings. `tests` contains
+36 CSV data tables, their units, keys and source mappings. `tests` contains
 the fixed common numerical test sets and the compact FDCVV replay fixture.
 The code package runs with relative paths; original absolute source paths in
 provenance records identify the archive and are not runtime dependencies.
@@ -133,7 +134,7 @@ and runtime data; this numerical entry point does not launch Abaqus.
 `SHA256SUMS.csv` lists distributed files. Run `python VERIFY_FILES.py` to check
 them using Python's standard library. The MATLAB verification reports describe
 checks actually executed for this package. Computational performance is
-documented by the separately controlled measurements in the timing supplement.
+documented by the controlled measurements in `data/timing`.
 
 ## License and citation
 
