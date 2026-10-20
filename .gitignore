@@ -1,0 +1,15 @@
+# Generated trajectory results and verification traces
+/results/
+/validation/replay/
+# Local MATLAB settings and editor backups
+*.asv
+*.m~
+*.mexa64
+*.mexw64
+*.mexmaci64
+# Python and operating-system caches
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+# Keep supplied data, MAT test fixtures, and validation reports tracked.
