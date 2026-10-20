@@ -1,0 +1,19 @@
+benchmark,benchmark_id,initial_n,method,method_id,initial_seed,run_seed_base,repeat_min,repeat_max,added_observations,K_rule,lambda_rule
+GL1D,3,5,FDCVV,25,26091603,281110000,106,135,30,4-3-2 at 1/3 and 1/2,.35 .10
+GL1D,3,5,LC2015,26,26091603,260948600,1,30,30,not_applicable,not_applicable
+GL1D,3,5,CVVor,2,26091603,260946200,1,30,30,not_applicable,not_applicable
+GL1D,3,5,SSA,1,26091603,260946100,1,30,30,not_applicable,not_applicable
+GL1D,3,5,MaxVariance,24,26091603,260948400,1,30,30,not_applicable,not_applicable
+GL1D,3,5,LHS_rebuild,23,26091603,260948300,1,30,30,not_applicable,not_applicable
+Peaks2D,19,10,FDCVV,25,26091619,281210000,106,135,30,4-3-2 at 1/3 and 1/2,.35 .10
+Peaks2D,19,10,LC2015,26,26091619,261108600,1,30,30,not_applicable,not_applicable
+Peaks2D,19,10,CVVor,2,26091619,261106200,1,30,30,not_applicable,not_applicable
+Peaks2D,19,10,SSA,1,26091619,261106100,1,30,30,not_applicable,not_applicable
+Peaks2D,19,10,MaxVariance,24,26091619,261108400,1,30,30,not_applicable,not_applicable
+Peaks2D,19,10,LHS_rebuild,23,26091619,261108300,1,30,30,not_applicable,not_applicable
+H3_historical,22,15,FDCVV,25,26091622,281310000,106,135,30,4-3-2 at 1/3 and 1/2,.35 .10
+H3_historical,22,15,LC2015,26,26091622,261138600,1,30,30,not_applicable,not_applicable
+H3_historical,22,15,CVVor,2,26091622,261136200,1,30,30,not_applicable,not_applicable
+H3_historical,22,15,SSA,1,26091622,261136100,1,30,30,not_applicable,not_applicable
+H3_historical,22,15,MaxVariance,24,26091622,261138400,1,30,30,not_applicable,not_applicable
+H3_historical,22,15,LHS_rebuild,23,26091622,261138300,1,30,30,not_applicable,not_applicable

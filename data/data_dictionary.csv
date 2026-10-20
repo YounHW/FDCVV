@@ -1,0 +1,362 @@
+file,field,storage_type,unit,description,missing_count,missing_tokens,primary_key
+numerical/baseline_endpoints540.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/baseline_endpoints540.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
+numerical/baseline_endpoints540.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/baseline_endpoints540.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,export_folder,object,path string,Original Windows provenance path; not needed to read packaged data,90,empty field / NaN,False
+numerical/baseline_endpoints540.csv,output_sha256,object,hex string,SHA256 of original source artifact,90,empty field / NaN,False
+numerical/baseline_endpoints540.csv,accepted_sha256,object,hex string,SHA256 of original source artifact,90,empty field / NaN,False
+numerical/baseline_endpoints540.csv,reused,object,boolean,Existing accepted result reused in this collection,90,empty field / NaN,False
+numerical/baseline_endpoints540.csv,curve_sha256,float64,hex string,SHA256 of original source artifact,540,empty field / NaN,False
+numerical/baseline_curves16200.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/baseline_curves16200.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
+numerical/baseline_curves16200.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/baseline_curves16200.csv,step,int64,count or index,step,0,empty field / NaN,True
+numerical/baseline_curves16200.csv,samples,int64,count or index,samples,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,native_r2,float64,dimensionless,native r2,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
+numerical/endpoints720.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/endpoints720.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
+numerical/endpoints720.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/endpoints720.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/endpoints720.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/endpoints720.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/endpoints720.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
+numerical/endpoints720.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
+numerical/endpoints720.csv,export_folder,object,path string,Original Windows provenance path; not needed to read packaged data,450,empty field / NaN,False
+numerical/endpoints720.csv,output_sha256,object,hex string,SHA256 of original source artifact,450,empty field / NaN,False
+numerical/endpoints720.csv,accepted_sha256,object,hex string,SHA256 of original source artifact,450,empty field / NaN,False
+numerical/endpoints720.csv,reused,object,boolean,Existing accepted result reused in this collection,450,empty field / NaN,False
+numerical/endpoints720.csv,curve_sha256,object,hex string,SHA256 of original source artifact,485,empty field / NaN,False
+numerical/paired_effects21.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/paired_effects21.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
+numerical/paired_effects21.csv,n,int64,count or index,n,0,empty field / NaN,False
+numerical/paired_effects21.csv,full_mean,float64,NRMSE ratio,Mean common-test NRMSE of Full,0,empty field / NaN,False
+numerical/paired_effects21.csv,control_mean,float64,NRMSE ratio,Mean common-test NRMSE of control,0,empty field / NaN,False
+numerical/paired_effects21.csv,difference,float64,NRMSE ratio,Control mean minus Full mean,0,empty field / NaN,False
+numerical/paired_effects21.csv,difference_ci_low,float64,NRMSE ratio,difference ci low; paired control minus Full,0,empty field / NaN,False
+numerical/paired_effects21.csv,difference_ci_high,float64,NRMSE ratio,difference ci high; paired control minus Full,0,empty field / NaN,False
+numerical/paired_effects21.csv,relative_pct,float64,%,100*(control mean/Full mean - 1),0,empty field / NaN,False
+numerical/paired_effects21.csv,relative_ci_low,float64,dimensionless,relative ci low,0,empty field / NaN,False
+numerical/paired_effects21.csv,relative_ci_high,float64,dimensionless,relative ci high,0,empty field / NaN,False
+numerical/paired_effects21.csv,t,float64,dimensionless,Paired t statistic,0,empty field / NaN,False
+numerical/paired_effects21.csv,df,int64,count,Paired t-test degrees of freedom,0,empty field / NaN,False
+numerical/paired_effects21.csv,p,float64,probability,Two-sided paired t-test p value,0,empty field / NaN,False
+numerical/paired_effects21.csv,p_signflip,float64,probability,Paired random-sign-flip p value,0,empty field / NaN,False
+numerical/paired_effects21.csv,full_wins,int64,count or index,full wins,0,empty field / NaN,False
+numerical/paired_effects21.csv,ties,int64,count or index,ties,0,empty field / NaN,False
+numerical/paired_effects21.csv,full_losses,int64,count or index,full losses,0,empty field / NaN,False
+numerical/paired_effects21.csv,p_holm21,float64,probability,Holm-adjusted t-test p value across 21 comparisons,0,empty field / NaN,False
+numerical/paired_effects21.csv,p_signflip_holm21,float64,probability,Holm-adjusted sign-flip p value across 21 comparisons,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,config,object,label,config identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_endpoints2250.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_endpoints2250.csv,lambda0,float64,dimensionless,Initial variance weight lambda_0,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,p_cross,float64,fraction,Progress at variance-distance equal weighting,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/lambda_endpoints2250.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,reused,bool,boolean,Existing accepted result reused in this collection,0,empty field / NaN,False
+numerical/lambda_summary75.csv,config,object,label,config identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_summary75.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_summary75.csv,lambda0,float64,dimensionless,Initial variance weight lambda_0,0,empty field / NaN,False
+numerical/lambda_summary75.csv,p_cross,float64,fraction,Progress at variance-distance equal weighting,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_rmse_mean,float64,response units,common rmse mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_rmse_std,float64,response units,common rmse std; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_rmse_median,float64,response units,common rmse median; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_rmse_min,float64,response units,common rmse min; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_rmse_max,float64,response units,common rmse max; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_mean,float64,dimensionless,common nrmse mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_std,float64,dimensionless,common nrmse std; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_median,float64,dimensionless,common nrmse median; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_min,float64,dimensionless,common nrmse min; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_max,float64,dimensionless,common nrmse max; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_r2_mean,float64,dimensionless,common r2 mean,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_r2_std,float64,dimensionless,common r2 std,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_r2_median,float64,dimensionless,common r2 median,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_r2_min,float64,dimensionless,common r2 min,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_r2_max,float64,dimensionless,common r2 max,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,metric,object,label,metric identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_cross_benchmark_gap50.csv,config,object,label,config identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_cross_benchmark_gap50.csv,lambda0,float64,dimensionless,Initial variance weight lambda_0,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,p_cross,float64,fraction,Progress at variance-distance equal weighting,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,GL1D_gap_pct,float64,%,GL1D gap pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,Peaks2D_gap_pct,float64,%,Peaks2D gap pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,H3_historical_gap_pct,float64,%,H3 historical gap pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,worst_gap_pct,float64,%,worst gap pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,mean_gap_pct,float64,%,mean gap pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/lambda_cross_benchmark_gap50.csv,descriptive_rank,float64,rank,"Ascending rank by worst gap, then mean gap within each metric",0,empty field / NaN,False
+numerical/loocv_model_results.csv,benchmark_key,object,label,benchmark key identifier; definitions in README,0,empty field / NaN,True
+numerical/loocv_model_results.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,replicate,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/loocv_model_results.csv,source_sheet,object,label,source sheet identifier; definitions in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,sample_size,int64,count or index,sample size,0,empty field / NaN,True
+numerical/loocv_model_results.csv,error_vector_RMSE,float64,response units,error vector RMSE; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,maximum_absolute_deviation,float64,response units,maximum absolute deviation; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/loocv_model_results.csv,relative_L2_error,float64,dimensionless,relative L2 error,0,empty field / NaN,False
+numerical/loocv_model_results.csv,relative_RMSE,float64,response units,relative RMSE; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,spearman_rank_correlation,float64,dimensionless,spearman rank correlation,0,empty field / NaN,False
+numerical/loocv_model_results.csv,exact_time_s,float64,s,exact time s; timing components defined in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,fast_time_s,float64,s,fast time s; timing components defined in README,0,empty field / NaN,False
+numerical/loocv_model_results.csv,speedup_exact_over_fast,float64,dimensionless,speedup exact over fast,0,empty field / NaN,False
+numerical/loocv_model_results.csv,correlation_matrix_condition,float64,dimensionless,correlation matrix condition,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,benchmark_key,object,label,benchmark key identifier; definitions in README,0,empty field / NaN,True
+numerical/loocv_pointwise_results.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,replicate,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/loocv_pointwise_results.csv,source_sheet,object,label,source sheet identifier; definitions in README,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,sample_size,int64,count or index,sample size,0,empty field / NaN,True
+numerical/loocv_pointwise_results.csv,point_index,int64,count or index,point index,0,empty field / NaN,True
+numerical/loocv_pointwise_results.csv,exact_LOOCV_error,float64,response units,exact LOOCV error; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,fast_LOOCV_error,float64,response units,fast LOOCV error; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,deviation,float64,response units,deviation; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,absolute_deviation,float64,response units,absolute deviation; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/loocv_pointwise_results.csv,pointwise_relative_error,float64,dimensionless,pointwise relative error,0,empty field / NaN,False
+numerical/spatial_representatives6.csv,method,object,label,method identifier; definitions in README,0,empty field / NaN,True
+numerical/spatial_representatives6.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,False
+numerical/spatial_representatives6.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/spatial_representatives6.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
+numerical/H3_truth_slice.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_truth_slice.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_truth_slice.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_truth_slice.csv,truth,float64,response units,truth; LOOCV deviation is fast minus reference,0,empty field / NaN,False
+numerical/stopping_current_decisions270_before_test.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/stopping_current_decisions270_before_test.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/stopping_current_decisions270_before_test.csv,threshold,float64,dimensionless,Stopping threshold,0,empty field / NaN,True
+numerical/stopping_current_decisions270_before_test.csv,stop_step,int64,count,Enrichment step at selected stopping point,0,empty field / NaN,False
+numerical/stopping_current_decisions270_before_test.csv,triggered,int64,boolean,Stopping rule triggered,0,empty field / NaN,False
+numerical/stopping_current_decisions270_before_test.csv,saved_points,int64,count,Enrichment evaluations saved,0,empty field / NaN,False
+numerical/stopping_current_decisions270_before_test.csv,response_scale,float64,response units,Response scale used by stopping monitor,0,empty field / NaN,False
+numerical/stopping_current_decisions270_before_test.csv,monitor_seed,int64,integer,Stopping-monitor random seed,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/stopping_current_outcomes270.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+numerical/stopping_current_outcomes270.csv,threshold,float64,dimensionless,Stopping threshold,0,empty field / NaN,True
+numerical/stopping_current_outcomes270.csv,stop_step,int64,count,Enrichment step at selected stopping point,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,triggered,int64,boolean,Stopping rule triggered,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,saved_points,int64,count,Enrichment evaluations saved,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,training_n,int64,count or index,training n,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,stop_rmse,float64,response units,stop rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,full_rmse,float64,response units,full rmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,stop_common_nrmse,float64,dimensionless,stop common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,full_common_nrmse,float64,dimensionless,full common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,stop_r2,float64,dimensionless,stop r2,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,full_r2,float64,dimensionless,full r2,0,empty field / NaN,False
+numerical/stopping_summary9.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+numerical/stopping_summary9.csv,threshold,float64,dimensionless,Stopping threshold,0,empty field / NaN,True
+numerical/stopping_summary9.csv,n,int64,count or index,n,0,empty field / NaN,False
+numerical/stopping_summary9.csv,early_count,int64,count or index,early count,0,empty field / NaN,False
+numerical/stopping_summary9.csv,triggered_count,int64,count or index,triggered count,0,empty field / NaN,False
+numerical/stopping_summary9.csv,mean_saved,float64,count,Mean saved evaluations or its 95% bootstrap interval bound,0,empty field / NaN,False
+numerical/stopping_summary9.csv,saved_ci_low,float64,count,Mean saved evaluations or its 95% bootstrap interval bound,0,empty field / NaN,False
+numerical/stopping_summary9.csv,saved_ci_high,float64,count,Mean saved evaluations or its 95% bootstrap interval bound,0,empty field / NaN,False
+numerical/stopping_summary9.csv,mean_stop_step,float64,count,mean stop step,0,empty field / NaN,False
+numerical/stopping_summary9.csv,mean_training_n,float64,count,mean training n,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_stop_mean,float64,response units,rmse stop mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_full_mean,float64,response units,rmse full mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_difference,float64,response units,rmse difference; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_difference_ci_low,float64,response units,rmse difference ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_difference_ci_high,float64,response units,rmse difference ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_relative_pct,float64,%,rmse relative pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_relative_ci_low,float64,response units,rmse relative ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,rmse_relative_ci_high,float64,response units,rmse relative ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_stop_mean,float64,dimensionless,common nrmse stop mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_full_mean,float64,dimensionless,common nrmse full mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference,float64,dimensionless,common nrmse difference; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference_ci_low,float64,dimensionless,common nrmse difference ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference_ci_high,float64,dimensionless,common nrmse difference ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_pct,float64,%,common nrmse relative pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_ci_low,float64,dimensionless,common nrmse relative ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_ci_high,float64,dimensionless,common nrmse relative ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,r2_stop_mean,float64,dimensionless,r2 stop mean,0,empty field / NaN,False
+numerical/stopping_summary9.csv,r2_full_mean,float64,dimensionless,r2 full mean,0,empty field / NaN,False
+numerical/stopping_summary9.csv,r2_difference,float64,dimensionless,r2 difference,0,empty field / NaN,False
+numerical/stopping_summary9.csv,r2_difference_ci_low,float64,dimensionless,r2 difference ci low,0,empty field / NaN,False
+numerical/stopping_summary9.csv,r2_difference_ci_high,float64,dimensionless,r2 difference ci high,0,empty field / NaN,False
+numerical/H3_CVVor_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_CVVor_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_CVVor_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_CVVor_samples.csv,initial,int64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/H3_FDCVV_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_FDCVV_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_FDCVV_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_FDCVV_samples.csv,initial,float64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/H3_LC2015_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LC2015_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LC2015_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LC2015_samples.csv,initial,int64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/H3_LHS_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LHS_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LHS_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_LHS_samples.csv,initial,int64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/H3_MaxVariance_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_MaxVariance_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_MaxVariance_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_MaxVariance_samples.csv,initial,float64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/H3_SSA_samples.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_SSA_samples.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_SSA_samples.csv,u3,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
+numerical/H3_SSA_samples.csv,initial,float64,boolean,Initial-design point flag,0,empty field / NaN,False
+numerical/K_retention_figure.csv,K,int64,count or index,K,0,empty field / NaN,True
+numerical/K_retention_figure.csv,C1,float64,%,Retention of the reference highest-score region,0,empty field / NaN,False
+numerical/K_retention_figure.csv,C2,float64,%,Retention of reference top-two positions,0,empty field / NaN,False
+numerical/K_retention_figure.csv,panel,object,label,Panel a: all 75 model instances; panel b: final-size models,0,empty field / NaN,True
+ranking/current_conditions2700.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+ranking/current_conditions2700.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+ranking/current_conditions2700.csv,step,int64,count or index,step,0,empty field / NaN,True
+ranking/current_conditions2700.csv,samples,int64,count or index,samples,0,empty field / NaN,False
+ranking/current_conditions2700.csv,condition2,float64,dimensionless,Matrix 2-norm condition number,0,empty field / NaN,False
+ranking/current_conditions2700.csv,chol_flag,int64,integer flag,Cholesky test return flag; zero means success,0,empty field / NaN,False
+ranking/current_conditions2700.csv,symmetry_error,int64,dimensionless,Stored matrix symmetry residual,0,empty field / NaN,False
+ranking/current_conditions2700.csv,finite,int64,boolean,All stored matrix entries are finite,0,empty field / NaN,False
+ranking/current_condition_summary.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+ranking/current_condition_summary.csv,count,int64,count or index,count,0,empty field / NaN,False
+ranking/current_condition_summary.csv,min,float64,dimensionless,Summary of matrix 2-norm condition number,0,empty field / NaN,False
+ranking/current_condition_summary.csv,median,float64,dimensionless,Summary of matrix 2-norm condition number,0,empty field / NaN,False
+ranking/current_condition_summary.csv,max,float64,dimensionless,Summary of matrix 2-norm condition number,0,empty field / NaN,False
+ranking/ranking_checks300.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+ranking/ranking_checks300.csv,replicate,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+ranking/ranking_checks300.csv,n,int64,count or index,n,0,empty field / NaN,True
+ranking/ranking_checks300.csv,K,int64,count or index,K,0,empty field / NaN,True
+ranking/ranking_checks300.csv,delta,float64,response units,Maximum absolute reference-fast score difference,0,empty field / NaN,False
+ranking/ranking_checks300.csv,gap,float64,response units,Reference score gap between ranks K and K+1,0,empty field / NaN,False
+ranking/ranking_checks300.csv,global_certificate,bool,boolean,Uniform ranking-gap sufficient condition satisfied,0,empty field / NaN,False
+ranking/ranking_checks300.csv,pointwise_certificate,bool,boolean,Pointwise ranking-gap sufficient condition satisfied,0,empty field / NaN,False
+ranking/ranking_checks300.csv,exact_set_match,bool,boolean,Fast and reference top-K sets are identical,0,empty field / NaN,False
+ranking/ranking_checks300.csv,overlap,float64,ratio,Fraction of reference top-K entries in the fast top-K set,0,empty field / NaN,False
+ranking/ranking_checks300.csv,best_reference_retained,int64,0 or 1,Reference maximum-score region is in retained fast top-K set,0,empty field / NaN,False
+ranking/ranking_checks300.csv,relative_best_loss,float64,ratio,Loss of best reference score when restricting to retained fast regions,0,empty field / NaN,False
+ranking/ranking_summary.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+ranking/ranking_summary.csv,K,int64,count or index,K,0,empty field / NaN,True
+ranking/ranking_summary.csv,models,int64,count or index,models,0,empty field / NaN,False
+ranking/ranking_summary.csv,global_pass,int64,count or index,global pass,0,empty field / NaN,False
+ranking/ranking_summary.csv,pointwise_pass,int64,count or index,pointwise pass,0,empty field / NaN,False
+ranking/ranking_summary.csv,set_match,int64,count or index,set match,0,empty field / NaN,False
+ranking/ranking_summary.csv,mean_overlap,float64,dimensionless,mean overlap,0,empty field / NaN,False
+ranking/ranking_summary.csv,best_retained,int64,count or index,best retained,0,empty field / NaN,False
+ranking/ranking_summary.csv,max_best_loss,float64,dimensionless,max best loss,0,empty field / NaN,False
+timing/verified_trajectories.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+timing/verified_trajectories.csv,method,object,label,method identifier; definitions in README,0,empty field / NaN,True
+timing/verified_trajectories.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+timing/verified_trajectories.csv,source_repeat,int64,identifier,"Original source trajectory ID, distinct from local timing repeat",0,empty field / NaN,False
+timing/verified_trajectories.csv,initial_fit_s,float64,s,initial fit s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,selection_s,float64,s,selection s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,truth_s,float64,s,truth s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,refit_s,float64,s,refit s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,core_s,float64,s,core s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,trace_io_s,float64,s,trace io s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,wait_s,float64,s,wait s; timing components defined in README,0,empty field / NaN,False
+timing/verified_trajectories.csv,test_s,float64,s,test s; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+timing/summary9.csv,method,object,label,method identifier; definitions in README,0,empty field / NaN,True
+timing/summary9.csv,n,int64,count or index,n,0,empty field / NaN,False
+timing/summary9.csv,initial_fit_s_median,float64,s,initial fit s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,initial_fit_s_min,float64,s,initial fit s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,initial_fit_s_max,float64,s,initial fit s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,initial_fit_s_mean,float64,s,initial fit s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,selection_s_median,float64,s,selection s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,selection_s_min,float64,s,selection s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,selection_s_max,float64,s,selection s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,selection_s_mean,float64,s,selection s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,truth_s_median,float64,s,truth s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,truth_s_min,float64,s,truth s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,truth_s_max,float64,s,truth s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,truth_s_mean,float64,s,truth s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,refit_s_median,float64,s,refit s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,refit_s_min,float64,s,refit s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,refit_s_max,float64,s,refit s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,refit_s_mean,float64,s,refit s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,core_s_median,float64,s,core s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,core_s_min,float64,s,core s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,core_s_max,float64,s,core s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,core_s_mean,float64,s,core s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,trace_io_s_median,float64,s,trace io s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,trace_io_s_min,float64,s,trace io s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,trace_io_s_max,float64,s,trace io s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,trace_io_s_mean,float64,s,trace io s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,wait_s_median,float64,s,wait s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,wait_s_min,float64,s,wait s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,wait_s_max,float64,s,wait s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,wait_s_mean,float64,s,wait s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,test_s_median,float64,s,test s median; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,test_s_min,float64,s,test s min; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,test_s_max,float64,s,test s max; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,test_s_mean,float64,s,test s mean; timing components defined in README,0,empty field / NaN,False
+timing/summary9.csv,selection_fraction_median,float64,dimensionless,selection fraction median,0,empty field / NaN,False
+timing/comparisons6.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+timing/comparisons6.csv,reference,object,label,reference identifier; definitions in README,0,empty field / NaN,True
+timing/comparisons6.csv,core_s_reference_over_FDCVV,float64,dimensionless,core s reference over FDCVV,0,empty field / NaN,False
+timing/comparisons6.csv,core_s_reduction_percent,float64,%,core s reduction percent; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+timing/comparisons6.csv,selection_s_reference_over_FDCVV,float64,dimensionless,selection s reference over FDCVV,0,empty field / NaN,False
+timing/comparisons6.csv,selection_s_reduction_percent,float64,%,selection s reduction percent; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+timing/comparisons6.csv,core_ranges_separated,bool,boolean,Observed complete-cost ranges do not overlap,0,empty field / NaN,False
+timing/comparisons6.csv,core_mean_reduction_percent,float64,%,core mean reduction percent; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+timing/load_attempts.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
+timing/load_attempts.csv,method,object,label,method identifier; definitions in README,0,empty field / NaN,True
+timing/load_attempts.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
+timing/load_attempts.csv,step,int64,count or index,step,0,empty field / NaN,True
+timing/load_attempts.csv,attempt,int64,count or index,attempt,0,empty field / NaN,True
+timing/load_attempts.csv,external_cores,float64,CPU core equivalents,Measured external CPU load,0,empty field / NaN,False
+timing/load_attempts.csv,peak_process_cores,float64,CPU core equivalents,Peak measured process CPU load,0,empty field / NaN,False
+timing/load_attempts.csv,accepted,int64,0 or 1,Attempt adopted in formal measurement,0,empty field / NaN,False
+timing/load_attempts.csv,tracked_processes,int64,count,Number of tracked processes,0,empty field / NaN,False
+finite_element/training30.csv,sample_id,object,identifier,sample id; training and validation sets are separate,0,empty field / NaN,True
+finite_element/training30.csv,sample_order,int64,count or index,sample order,0,empty field / NaN,False
+finite_element/training30.csv,TD,float64,s,Delay time T_D in physical units,0,empty field / NaN,False
+finite_element/training30.csv,OMEGA2,float64,kg,Second-chamber propellant mass,0,empty field / NaN,False
+finite_element/training30.csv,MH,float64,kg,"Piston mass, denoted M_C in manuscript",0,empty field / NaN,False
+finite_element/training30.csv,response,float64,m,FE muzzle displacement magnitude,0,empty field / NaN,False
+finite_element/validation10.csv,training_sample_count,int64,count or index,training sample count,0,empty field / NaN,False
+finite_element/validation10.csv,validation_id,int64,identifier,validation id; training and validation sets are separate,0,empty field / NaN,True
+finite_element/validation10.csv,observed_response_m,float64,m,observed response m,0,empty field / NaN,False
+finite_element/validation10.csv,predicted_response_m,float64,m,predicted response m,0,empty field / NaN,False
+finite_element/validation10.csv,prediction_variance,float64,m^2,Kriging predictive variance,0,empty field / NaN,False
+finite_element/validation10.csv,signed_error_m,float64,m,signed error m,0,empty field / NaN,False
+finite_element/validation10.csv,absolute_error_m,float64,m,absolute error m,0,empty field / NaN,False
+finite_element/validation10.csv,observed_response_um,float64,um,observed response um,0,empty field / NaN,False
+finite_element/validation10.csv,predicted_response_um,float64,um,predicted response um,0,empty field / NaN,False
+finite_element/validation10.csv,signed_error_um,float64,um,signed error um,0,empty field / NaN,False
+finite_element/validation10.csv,absolute_error_um,float64,um,absolute error um,0,empty field / NaN,False
+finite_element/stage_validation60.csv,training_sample_count,int64,count or index,training sample count,0,empty field / NaN,True
+finite_element/stage_validation60.csv,validation_id,int64,identifier,validation id; training and validation sets are separate,0,empty field / NaN,True
+finite_element/stage_validation60.csv,observed_response_m,float64,m,observed response m,0,empty field / NaN,False
+finite_element/stage_validation60.csv,predicted_response_m,float64,m,predicted response m,0,empty field / NaN,False
+finite_element/stage_validation60.csv,prediction_variance,float64,m^2,Kriging predictive variance,0,empty field / NaN,False
+finite_element/stage_validation60.csv,signed_error_m,float64,m,signed error m,0,empty field / NaN,False
+finite_element/stage_validation60.csv,absolute_error_m,float64,m,absolute error m,0,empty field / NaN,False
+finite_element/stage_validation60.csv,observed_response_um,float64,um,observed response um,0,empty field / NaN,False
+finite_element/stage_validation60.csv,predicted_response_um,float64,um,predicted response um,0,empty field / NaN,False
+finite_element/stage_validation60.csv,signed_error_um,float64,um,signed error um,0,empty field / NaN,False
+finite_element/stage_validation60.csv,absolute_error_um,float64,um,absolute error um,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,training_sample_count,int64,count or index,training sample count,0,empty field / NaN,True
+finite_element/stage_metrics26.csv,adaptive_sample_count,int64,count or index,adaptive sample count,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,R_squared,float64,dimensionless,Coefficient of determination,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,RMSE_m,float64,m,RMSE m,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,NRMSE,float64,ratio,FE RMSE / observed response range,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,RMSE_um,float64,um,RMSE um,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,NRMSE_percent,float64,%,NRMSE percent; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+finite_element/stage_metrics26.csv,MAE_m,float64,m,MAE m,20,empty field / NaN,False
+finite_element/stage_metrics26.csv,maximum_absolute_error_m,float64,m,maximum absolute error m,20,empty field / NaN,False
+finite_element/bootstrap_intervals3.csv,metric,object,label,metric identifier; definitions in README,0,empty field / NaN,True
+finite_element/bootstrap_intervals3.csv,estimate,float64,metric dependent,"Point estimate or 95% bound; R2 dimensionless, RMSE_um in um, NRMSE_pct in percent",0,empty field / NaN,False
+finite_element/bootstrap_intervals3.csv,low,float64,metric dependent,"Point estimate or 95% bound; R2 dimensionless, RMSE_um in um, NRMSE_pct in percent",0,empty field / NaN,False
+finite_element/bootstrap_intervals3.csv,high,float64,metric dependent,"Point estimate or 95% bound; R2 dimensionless, RMSE_um in um, NRMSE_pct in percent",0,empty field / NaN,False
+finite_element/bootstrap_intervals3.csv,finite_draws,int64,count,Bootstrap draws yielding finite metrics,0,empty field / NaN,False
+finite_element/bootstrap_intervals3.csv,seed,int64,integer,Bootstrap random seed,0,empty field / NaN,False
+finite_element/training_runtime30.csv,sample_order,int64,count or index,sample order,0,empty field / NaN,True
+finite_element/training_runtime30.csv,sample_id,object,identifier,sample id; training and validation sets are separate,0,empty field / NaN,False
+finite_element/training_runtime30.csv,wall_seconds,float64,s,Measured FE evaluation duration,5,empty field / NaN,False
+finite_element/training_runtime30.csv,wall_hours,float64,h,Measured FE evaluation duration,5,empty field / NaN,False
+finite_element/final_metrics1.csv,training_count,int64,count or index,training count,0,empty field / NaN,True
+finite_element/final_metrics1.csv,validation_count,int64,count or index,validation count,0,empty field / NaN,True
+finite_element/final_metrics1.csv,RMSE,float64,m,FE root-mean-square validation error,0,empty field / NaN,False
+finite_element/final_metrics1.csv,NRMSE,float64,ratio,FE RMSE / observed response range,0,empty field / NaN,False
+finite_element/final_metrics1.csv,MAE,float64,m,FE mean absolute validation error,0,empty field / NaN,False
+finite_element/final_metrics1.csv,max_absolute_error,float64,m,FE maximum absolute validation error,0,empty field / NaN,False
+finite_element/final_metrics1.csv,R_squared,float64,dimensionless,Coefficient of determination,0,empty field / NaN,False

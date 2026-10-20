@@ -1,0 +1,29 @@
+{
+  "status": "FROZEN",
+  "decision_date": "2026-10-13",
+  "lambda0": 0.35,
+  "p_cross": 0.1,
+  "alpha_formula": "log(0.15/0.65)/log(0.10)",
+  "K": [
+    4,
+    3,
+    2
+  ],
+  "K_progress": "(m-1)/mMax",
+  "K_thresholds": [
+    0.3333333333333333,
+    0.5
+  ],
+  "lambda_progress": "m/mMax",
+  "normalization": "within_each_selected_Voronoi_cell",
+  "score": "lambda*normalized_variance+(1-lambda)*normalized_nearest_sample_distance",
+  "core": [
+    "Fast_LOOCV",
+    "Voronoi"
+  ],
+  "hyperparameter_update": "original_MS_refit",
+  "implementation_source": "revision/K432_33_50_extend15_20261012/variant/FDCVV_function.m",
+  "runtime_source": "revision/K432_33_50_extend15_20261012/RUN_REVERSE.m",
+  "dependencies": "revision/original_code_reproduction_20260916/frozen_source/src",
+  "implementation_sha256": "5D28976F17E901029743B49ED34F7F1C52CA5141815D6EF6449CEB8E1367B6E0"
+}

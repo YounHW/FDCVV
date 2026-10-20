@@ -1,0 +1,7 @@
+method,repeat,common_nrmse,source_folder
+FDCVV,108,0.0474023498313629,D:\Codex_Workspeace\adaptive sampling\revision\K321_32_3_pilot5_20261012\K432_33_50\H3_historical\rep_108
+CVVor,20,0.0605378065683594,D:\Codex_Workspeace\adaptive sampling\revision\original_code_reproduction_20260916\repeat30_hartmann\H3_historical\method_02\rep_20
+SSA,24,0.0680485574036898,D:\Codex_Workspeace\adaptive sampling\revision\original_code_reproduction_20260916\repeat30_hartmann\H3_historical\method_01\rep_24
+LHS,8,0.0865061174666769,D:\Codex_Workspeace\adaptive sampling\revision\original_code_reproduction_20260916\repeat30_hartmann\H3_historical\method_23\rep_08
+MaxVariance,11,0.13063250455706,D:\Codex_Workspeace\adaptive sampling\revision\original_code_reproduction_20260916\repeat30_hartmann\H3_historical\method_24\rep_11
+LC2015,20,0.0526897798291224,D:\Codex_Workspeace\adaptive sampling\revision\lc2015_original30_20260918\formal\H3_historical\rep_20

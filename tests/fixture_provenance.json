@@ -1,0 +1,114 @@
+{
+  "fixture": "replay_fixture.mat",
+  "extraction": "Saved pre-selection X,Y,theta,R and expected trace for steps 10,11,15,16,30",
+  "sources": [
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\OutputData.mat",
+      "sha256": "6f91ea686e43028ac6f76bc141ec0685e49bfad46231a86567b2d8e55f7b4d61",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\trace_10.mat",
+      "sha256": "d667f59c920cdba60e11198f05448a1a397c78d960cb1f560266d384a66f7bd2",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\trace_11.mat",
+      "sha256": "91b77358287e7a064a451a639c56e111cb307d7c74e9d99ca767e26e0a492799",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\trace_15.mat",
+      "sha256": "e71ea434dc32000c67b55fe6967cd1482e129d1690e684db5aeda8d71907c546",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\trace_16.mat",
+      "sha256": "c91e70f49c939590c7c4dced2a21b4d72e0ac0f8afcc060a0713eda35f76457b",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\GL1D\\rep_106\\trace_30.mat",
+      "sha256": "d8a64b9e4550d7f1540007cc048b76efc7ba8405e38567d03321a2689578f961",
+      "benchmark": "GL1D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\OutputData.mat",
+      "sha256": "be73aa0cd8981ea16037615f440c8ca7d82574803563c2aa7c4d7142c7b6fe30",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\trace_10.mat",
+      "sha256": "ea9d87f6852b6a02083ba4e5c18812079313935d0d1673667d1935e266ae1e8e",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\trace_11.mat",
+      "sha256": "6e312bf62caab24d167764567d2a06da3eca1bf4b4efa8d0cd6ff3e3b581a2c5",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\trace_15.mat",
+      "sha256": "4ee2f14d43e8baf8d4bf4ae6fa4d0641f99637973079d0960ebcc8577073de54",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\trace_16.mat",
+      "sha256": "8848226e0df0738b205d19becb1fd8f8f198519a6325ef30e0451c40bc31cf6f",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\Peaks2D\\rep_106\\trace_30.mat",
+      "sha256": "61fdbea500b8d47b7526fab12d0e98fb854387f25a22b3b6ee9c91431e4db29b",
+      "benchmark": "Peaks2D",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\OutputData.mat",
+      "sha256": "8722036d7c5e3fc1681979e1d2dca04992a07b73360712e3754c481b97a0f837",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\trace_10.mat",
+      "sha256": "7b2e0a9637742e215c6ab3951ddcd33ac46ef53846f53f2cdb4decbffc04e0a1",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\trace_11.mat",
+      "sha256": "7747513242da9a373ee165b39cef3d4022e92914b95844b39909770945ff1b3d",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\trace_15.mat",
+      "sha256": "b94b3520d2b4847c5cbbefcf41a6c42c4f8f1b2ff0b08e8ecb428d0b3757b02a",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\trace_16.mat",
+      "sha256": "0ec84982c9c3d649c8b74fb519bc4a26a2e04f73d1e577edf8f9f4009380b919",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    },
+    {
+      "source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\K321_32_3_pilot5_20261012\\K432_33_50\\H3_historical\\rep_106\\trace_30.mat",
+      "sha256": "a85d7083fd1758e38f3e20a1862b60fa8675ef5bf0616e063c062e45410d831d",
+      "benchmark": "H3_historical",
+      "source_repeat": 106
+    }
+  ]
+}

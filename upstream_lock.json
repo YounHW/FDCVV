@@ -1,0 +1,323 @@
+{
+  "repository": "https://github.com/FuhgJan/StateOfTheArtAdaptiveSampling",
+  "commit": "f3d9b779ba3ac97f2cdd85f6cc93ef2a1e6a3626",
+  "role": "Dependency revision selected and tested for this release, not an inferred historical download revision",
+  "files": [
+    {
+      "file": "src/adaptive_sampling_process.m",
+      "sha256_lf": "85ae6dd392cea5478680b52cc4c0bd61eb60e9d85edce49431102cf6aea52677"
+    },
+    {
+      "file": "src/adaptive_techniques/ACE_function.m",
+      "sha256_lf": "27522c92f86f244a49554ebf5273305ae8e6b98315cef8ee1fd601acbe56f6da"
+    },
+    {
+      "file": "src/adaptive_techniques/AME_function.m",
+      "sha256_lf": "a845d132666953dabe3ea1cf0efb6692e37595da00d6b452c5c25d1a51b95f78"
+    },
+    {
+      "file": "src/adaptive_techniques/CVVor_function.m",
+      "sha256_lf": "7cadd4e34ac85e5518a3eab9084309d3f5d8e814b9345be6ce4407aa132de51f"
+    },
+    {
+      "file": "src/adaptive_techniques/EI_function.m",
+      "sha256_lf": "e3f33b08af1111081a13a848f011e87193fe8a4eb8d753f5aac21db390978620"
+    },
+    {
+      "file": "src/adaptive_techniques/EIGF_function.m",
+      "sha256_lf": "2eb9ed36729bca48d30e9d9d46ae3d19595aca5cdfef69c5689aee1fc4ca6801"
+    },
+    {
+      "file": "src/adaptive_techniques/Jin_CV_function.m",
+      "sha256_lf": "77603c3ef7c3fc0346a98b874afb88d6176acb070b6ed8ac5878839935335265"
+    },
+    {
+      "file": "src/adaptive_techniques/LIP_function.m",
+      "sha256_lf": "52b5f5a27ddcae4b5b19b01c284ffa870c6988a7718f0d16f7557c0b994ee214"
+    },
+    {
+      "file": "src/adaptive_techniques/LOLA_function.m",
+      "sha256_lf": "da815bb8a014c1b3bcb5afb914e6eebc8d04099c15fe16893ec436026e6dbff6"
+    },
+    {
+      "file": "src/adaptive_techniques/MASA_function.m",
+      "sha256_lf": "d9e5a39707eb3ffc3859577b4c4cdb46b38f15e1fd15546235d3188069c6d9a7"
+    },
+    {
+      "file": "src/adaptive_techniques/MEPE_function.m",
+      "sha256_lf": "3ccb74a9dea4d44dfd8cbabe638cedda64d4f07ca91eb599eea1c3c6214d8cd7"
+    },
+    {
+      "file": "src/adaptive_techniques/MIPT_function.m",
+      "sha256_lf": "85e5ae8d7a6d3870249e3867e47f682cc777b6fb9dc856927359d5a6a37c723d"
+    },
+    {
+      "file": "src/adaptive_techniques/MSD_function.m",
+      "sha256_lf": "4c44742b65b0a97bfde79104217b6f812866893a6286bdcd4c61e822f89509f0"
+    },
+    {
+      "file": "src/adaptive_techniques/SFVCT_function.m",
+      "sha256_lf": "9566cd61ca13a67cf049b8c93f2f5265a95a1268699511f909bbe5f1c7ba6287"
+    },
+    {
+      "file": "src/adaptive_techniques/SSA_function.m",
+      "sha256_lf": "4a61a85689bb9357983eb791b2b309dd69773377e4e6ebb210e617f2a6eb9919"
+    },
+    {
+      "file": "src/adaptive_techniques/TEAD_function.m",
+      "sha256_lf": "d91ce16c4b3dde60259ffbf0809fa2c99953957b90ad5194907c88f64d9d690d"
+    },
+    {
+      "file": "src/adaptive_techniques/WAE_function.m",
+      "sha256_lf": "89c0b8e4d2e3bc0b27f1b8e985c76d8ee02f9a2c79e35cd187255cf1e3d00d96"
+    },
+    {
+      "file": "src/adaptive_techniques/WEI_function.m",
+      "sha256_lf": "b93328337f7ab831c619ad3479d2730ab3873bf1371f8ec513aca197aa836c4b"
+    },
+    {
+      "file": "src/Autocorrelation_functions/Cubic_spline_matrix.m",
+      "sha256_lf": "af2a4b18745839f0ba930e523f848d17ffa027a19d120b3dc37adf755f20f338"
+    },
+    {
+      "file": "src/Autocorrelation_functions/Matern32_matrix.m",
+      "sha256_lf": "fe09ee3d999ebec910be039ba6d326296742e52cc76d51662fc6f667cbf26207"
+    },
+    {
+      "file": "src/Autocorrelation_functions/Matern52_matrix.m",
+      "sha256_lf": "aae36b0df776369553fca5222f9718a4d29277550bd32d780e32ccb1e5ebd3e2"
+    },
+    {
+      "file": "src/Autocorrelation_functions/R_ex_matrix.m",
+      "sha256_lf": "45f3a66b8f2db0e72ce5526fe848c129445a9ff4265f51232853096ae2552804"
+    },
+    {
+      "file": "src/Autocorrelation_functions/R_sq_ex_matrix.m",
+      "sha256_lf": "a5d6e46f185038df981284c9000624828d0ce947cc159a5094a5ba1814837799"
+    },
+    {
+      "file": "src/benchmark_functions/Boha_2d.m",
+      "sha256_lf": "eb27dd371aa42cff0e79bb4fef75df3e7107782aa880b7317e9294647775ed72"
+    },
+    {
+      "file": "src/benchmark_functions/Booth_2d.m",
+      "sha256_lf": "ea15af75ba45119ac0efdf63cd6cc398d29cb32118313b96b7283e6d1ac14f4f"
+    },
+    {
+      "file": "src/benchmark_functions/Branin_2d.m",
+      "sha256_lf": "2dbcae8472ffc473232062aa5bb91a860a905eafcec56428dae10344edc26798"
+    },
+    {
+      "file": "src/benchmark_functions/Bukin_2d.m",
+      "sha256_lf": "699c56efb94a815a0834518ba4c727e8d0eeb291c28fc0defb344d59bb870f01"
+    },
+    {
+      "file": "src/benchmark_functions/Colville_4d.m",
+      "sha256_lf": "5c5084d566f04c5601459d68dc2643df4cfb120c8536a96f71338cc55532c29d"
+    },
+    {
+      "file": "src/benchmark_functions/DampedCos_1d.m",
+      "sha256_lf": "2b2f46f4f9efb24076ff87addfa32f8878cbda6c60ebf79457ffc6a83ab43d2d"
+    },
+    {
+      "file": "src/benchmark_functions/Detpep_3d.m",
+      "sha256_lf": "5c3309ea0fe425902cb23200729c111532f3dfbd149436f1af4b3c9ec6bfb8b9"
+    },
+    {
+      "file": "src/benchmark_functions/DixonP_4d.m",
+      "sha256_lf": "19c7b9291e07a660be2e307ff6b41a092ecc67777e0ec6f6f2e44083d8e7072f"
+    },
+    {
+      "file": "src/benchmark_functions/Drop_wave_2d.m",
+      "sha256_lf": "b24f30f27df35ee341bc165c9026fc1270e1574849f8d992d861856b9a6b2731"
+    },
+    {
+      "file": "src/benchmark_functions/Eggholder_2d.m",
+      "sha256_lf": "1a9dc26884855746b192b9bcf5194dce2f18857913bf068e4e6eea4f36331f1e"
+    },
+    {
+      "file": "src/benchmark_functions/Exploit_1d.m",
+      "sha256_lf": "4a7d38e72642c4e5e2ecbd61d10c6908c5bda54141d1174157cc09fb18e6082a"
+    },
+    {
+      "file": "src/benchmark_functions/Franke_2d.m",
+      "sha256_lf": "3f57ad263134337bdb69edec477a7eab7b81e6a9d6b8d89e924313cf218c2160"
+    },
+    {
+      "file": "src/benchmark_functions/Gramacy_Lee3_1d.m",
+      "sha256_lf": "4d317a162b80a691cacb032914c6cdb5437d69392163c511cb6dd18fdb94465a"
+    },
+    {
+      "file": "src/benchmark_functions/Gramacy_Lee_1d.m",
+      "sha256_lf": "f3eb89250442666606c0f16064baee25c16fc9619833eb60d64dc50076fd77a9"
+    },
+    {
+      "file": "src/benchmark_functions/Griewank_2d.m",
+      "sha256_lf": "75a86cbeadf177a86e918f5fbc1400e495d13e151025b372448961fbbb5a96c7"
+    },
+    {
+      "file": "src/benchmark_functions/Griewank_3d.m",
+      "sha256_lf": "1fa14972b88fc4546dd35fa3bfa5a4c415ab00f176ab8aff418c6891c281e2e4"
+    },
+    {
+      "file": "src/benchmark_functions/Hartmann_3d.m",
+      "sha256_lf": "8065f395aa14b97e21a1e9dd687e7366fe7bd0a42c46d685acc841dd81ddc375"
+    },
+    {
+      "file": "src/benchmark_functions/Hartmann_6d.m",
+      "sha256_lf": "3c005600f7cd23922c5d2a71673765a058d9b2e076c8dc8024502364d7718362"
+    },
+    {
+      "file": "src/benchmark_functions/Ishigami_3d.m",
+      "sha256_lf": "badf690e7e7fc03b76edd3f581fa97964eefeadc607224b8f13f131f33af22bd"
+    },
+    {
+      "file": "src/benchmark_functions/Langermann_3d.m",
+      "sha256_lf": "f2f0fe29db8cbf177aae7dbd8d7ff1181fe9022d55114f4a5cfe113ac176a7b0"
+    },
+    {
+      "file": "src/benchmark_functions/Micha_2d.m",
+      "sha256_lf": "f854d2c685907cc380fb5937e6e1eec5d24f196cb2a1f4eac91fbda557b63c77"
+    },
+    {
+      "file": "src/benchmark_functions/Michalewicz_3d.m",
+      "sha256_lf": "13a84a42921cc3ee0829f3df6d21f5c3bc25c1ad4e1ffdb63414eda9d2573b3c"
+    },
+    {
+      "file": "src/benchmark_functions/Mod_Gramacy_Lee_1d.m",
+      "sha256_lf": "4d317a162b80a691cacb032914c6cdb5437d69392163c511cb6dd18fdb94465a"
+    },
+    {
+      "file": "src/benchmark_functions/Perm0db_1d.m",
+      "sha256_lf": "de724da1c1ea90129744f541568ed2f5801ad0506584eaab5ca8fb5a5a11bd22"
+    },
+    {
+      "file": "src/benchmark_functions/Rastrigin_2d.m",
+      "sha256_lf": "9a4be4dfef643934937ca798aa702c0d748e8102763e1c39126aa068199255af"
+    },
+    {
+      "file": "src/benchmark_functions/Rosenbrock_2d.m",
+      "sha256_lf": "c59d52dabbc1900d555bf375bedb1a5f4245d0ad98e270d4feeaa4cdac665d26"
+    },
+    {
+      "file": "src/benchmark_functions/Schwefel_5d.m",
+      "sha256_lf": "ad281423389381491fcee4162ea2d84ee51030accba367ac0848037494b72002"
+    },
+    {
+      "file": "src/benchmark_functions/SHCamel_2d.m",
+      "sha256_lf": "18b55b275b14025a92864684428ff7e7709036c7836a21f5b63f200d301298ed"
+    },
+    {
+      "file": "src/benchmark_functions/Shekel_4d.m",
+      "sha256_lf": "692995d88412931dfb6cb766c268e7c127c572780b1da1dcb84017f8d0f98578"
+    },
+    {
+      "file": "src/benchmark_functions/Single_hump_1d.m",
+      "sha256_lf": "132b8b691cf9213c31e098064bca09f643316ac15e3407838c234778f56fd184"
+    },
+    {
+      "file": "src/benchmark_functions/Sphere_3d.m",
+      "sha256_lf": "89d017525e9d0c770b398ed3c42592ae29af0c78472f7e58df4da4cc7f4ccbed"
+    },
+    {
+      "file": "src/benchmark_functions/Sphere_4d.m",
+      "sha256_lf": "18a41da3932b6e747e93db8541132f8c829d9990fe66bf90658fd98c53cceb04"
+    },
+    {
+      "file": "src/benchmark_functions/Sphere_5d.m",
+      "sha256_lf": "4dec975ab6418ac0f13137ba81870ac325c4fc857c80bde435bb752f0471f55e"
+    },
+    {
+      "file": "src/benchmark_functions/Styblinski_Tang_5d.m",
+      "sha256_lf": "0b15e29657829e69d4632fdd1cea01373eceaaa301c5bb9a110cbde96ddad070"
+    },
+    {
+      "file": "src/benchmark_functions/Two_humps_function_1d.m",
+      "sha256_lf": "be51d7c68dd8449d7f15848ccb3cffdba176deb7f5c71126a3ba2867aea56fbc"
+    },
+    {
+      "file": "src/benchmark_functions/Zakharov_4d.m",
+      "sha256_lf": "f02b3f1036380009e3ecbfe43088e18ddf05b4133e12de6a516973b021fc64d6"
+    },
+    {
+      "file": "src/call_benchmarkFunctions.m",
+      "sha256_lf": "dd1bad84e82d182841a5ce09f762a8cc4a3f4acced6dbd25e205074910720248"
+    },
+    {
+      "file": "src/chooseSamplingMethod.m",
+      "sha256_lf": "923c75208b1d7dd15582574f8bd59e5b51bf6da1427b31eb5efc5ce25e88b9fa"
+    },
+    {
+      "file": "src/Error_Saver.m",
+      "sha256_lf": "2837f3556613241f39619d03e4eb6e7a22fcd2efc7531b4247bc99e1d6f167e7"
+    },
+    {
+      "file": "src/help_functions/intersite_proj_th.m",
+      "sha256_lf": "2b4f1090776f9b1be6e72ff3ecdbf72a55e11fd91ac3779e7db560bcf76123f8"
+    },
+    {
+      "file": "src/help_functions/lhs_scaled.m",
+      "sha256_lf": "b708b6cd929650f4f09ff9fc7aaf3df67db640944ef506d23d0fba69256bdd9f"
+    },
+    {
+      "file": "src/help_functions/randomVoronoi.m",
+      "sha256_lf": "d1a73d5b4c998970604c55e733058c087104d9e9c84a9cfd098235e33c8cb414"
+    },
+    {
+      "file": "src/help_functions/scale_rand.m",
+      "sha256_lf": "8d17a375d800dcbe691a965aa3a4006e5db5850b9887938b8ffea93e00a08cc4"
+    },
+    {
+      "file": "src/help_functions/scale_to_unity.m",
+      "sha256_lf": "5c761f5992f609aa5fe35cf113029345b7cef24cfd4d96888d8d3cdbda707654"
+    },
+    {
+      "file": "src/help_functions/scale_vector_from_unity.m",
+      "sha256_lf": "bc389053e87579df870e1437b38a879e1720e2e16820077ac6150f50e3eb83f2"
+    },
+    {
+      "file": "src/help_functions/scale_vector_to_unity.m",
+      "sha256_lf": "d09dfff428e8c32abbfc752023e9cc29ff1c072d0d003be60bdc6c2d55198183"
+    },
+    {
+      "file": "src/initial_metamodel.m",
+      "sha256_lf": "3b412c92cf128f16c548da4a7fced92eaba6fa5b1d92684200f6aa29de5b84d6"
+    },
+    {
+      "file": "src/OK_model.m",
+      "sha256_lf": "715f779ef08d08b05b6d4c9e70417d235cc7edebe06e8a720822730e85c7305d"
+    },
+    {
+      "file": "src/optimizationTools.m",
+      "sha256_lf": "68540712a354a5980ab5d6faea3d21067536bc6cb0f89a3bc778d773f65fa3dd"
+    },
+    {
+      "file": "src/run_input_prompts.m",
+      "sha256_lf": "bbd4a1ddefc345e4507387398045911cb7c137bdae64b1b0b34a982f082a16c2"
+    },
+    {
+      "file": "src/TPLHD/createTPLHD.m",
+      "sha256_lf": "3b7c59182d9c333410d46e76e4db2f29be8ead2d291068abe13a083198ff07b3"
+    },
+    {
+      "file": "src/TPLHD/reshapeSeed.m",
+      "sha256_lf": "9cff6ef514552c03ac03cc966d4a3940e3302628b6e1690a3998d9ece593fe12"
+    },
+    {
+      "file": "src/TPLHD/resizeTPLHD.m",
+      "sha256_lf": "9365a93e9c3daef2663abefeffe6406c40a3b3b43c147834aee96a875bb717cc"
+    },
+    {
+      "file": "src/TPLHD/scale.m",
+      "sha256_lf": "902193f3de605426c4987adcd1d52e6829741d8a30d60fa433a63c8bf0a764c5"
+    },
+    {
+      "file": "src/TPLHD/scaled_TPLHD.m",
+      "sha256_lf": "88d584df8fb0291ae206a44ede18c9bf3b9c4091f654f0dd62bfe7a90a573d80"
+    },
+    {
+      "file": "src/TPLHD/tplhsdesign.m",
+      "sha256_lf": "371d7fa49fc395438e50598d8c6ec2ba0e44b6b3ac5bf368d2a533cffac43d3d"
+    }
+  ]
+}

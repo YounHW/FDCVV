@@ -1,0 +1,37 @@
+file,rows,columns,primary_key,purpose,sha256
+numerical/baseline_endpoints540.csv,540,13,benchmark|version|repeat,"Six-method endpoint comparison, Fig. 8-10",ccce1d4152628b59520f395360716786cd5ecc17291f5781837f19dac892820f
+numerical/baseline_curves16200.csv,16200,10,benchmark|version|repeat|step,"Six-method convergence curves, Fig. 8-10",0037e4408ee9ee4d9e694630380bc5e3275e5cf559068e9aaba469b24baab948
+numerical/endpoints720.csv,720,13,benchmark|version|repeat,"Eight ablation configurations, Fig. 14",53d0e8a7ce661a7bb173dcb407af957cc1613b3f2894bbd0461fce2dbd5de685
+numerical/paired_effects21.csv,21,20,benchmark|version,"Paired ablation statistics, Fig. 14 and numerical supplement",da1c5948c7b1511a579f20e153912797c89ef89ad161a32fcd8162beea05a76f
+numerical/lambda_endpoints2250.csv,2250,10,config|benchmark|repeat,25-setting sensitivity endpoints,26f48521450ad63793be1b506201137559003d7b3b7a2e842fb3a983fd6b2922
+numerical/lambda_summary75.csv,75,19,config|benchmark,"Sensitivity means and sample standard deviations, Fig. 6",8c385743e57c4516d2650c645ab9fcb7d469271d83f55f5bd4a861d05667a1fb
+numerical/lambda_cross_benchmark_gap50.csv,50,10,metric|config,"Relative gaps and cross-benchmark selection summaries, Fig. 7",301ea51c9dd0134f362d28bac018a98f6f62d2573cb1ac6816e2a9bc2cc5aa5b
+numerical/loocv_model_results.csv,75,14,benchmark_key|replicate|sample_size,"75 model instances, Fig. 4 and 13",c611a26d7cfd7b36a6eccc821121fc83d9d7d4b2df7b7dab25669dd2f26c204a
+numerical/loocv_pointwise_results.csv,1890,11,benchmark_key|replicate|sample_size|point_index,"Pointwise reference and fast LOOCV scores, Fig. 4",9687c7fcba7c01c473378bd31eb65025f26aee868f2217e0999fbf92ec851c06
+numerical/spatial_representatives6.csv,6,4,method,"Representative trajectory identifiers, Fig. 11",36e352008d24a0d33c1195943568c7e866e3b332498079d8665d66b0e0a093a7
+numerical/H3_truth_slice.csv,6561,4,u1|u2|u3,"True-response slice, Fig. 11",a81a84ef90c6bf89c8aa8dc4f36396166579f9c7a8c31231af54f1218d4a2ebe
+numerical/stopping_current_decisions270_before_test.csv,270,8,benchmark|repeat|threshold,Stopping decisions saved before test evaluation,27d4622d67bd499eaab86b59a36049e1c66ce34c11c269f2441422f117207e25
+numerical/stopping_current_outcomes270.csv,270,13,benchmark|repeat|threshold,"Adopted-configuration stopping outcomes, Fig. 15",5e6660e57355b19e4008e765834d14029e1dbb95f9869dcb30872348c1a05192
+numerical/stopping_summary9.csv,9,31,benchmark|threshold,"Stopping summaries, Fig. 15",f6c75195e0c8518be1552039c16333cabe517d9ccca2b62bb281409b333aba4a
+numerical/H3_CVVor_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",4828ddeef33f1bfb8547926e1456b032b05b6fb79e7ba1063e54fb499a564665
+numerical/H3_FDCVV_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",f1cfe695db2126b8c6c99f80dbe1af05c741298bebe45ffecd28a5055a79e140
+numerical/H3_LC2015_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",2a6294f3db90262cfd3c52093335b97964d61ceacdb1d6629a6d1ad8fed86595
+numerical/H3_LHS_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",3bcacffccebb7f380b5e3a6033f610162ca078f9f07fd798100b62fc1439cf2b
+numerical/H3_MaxVariance_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",730f997f4194386d719f525825dec723060bf3eee4280df48c86ae1ea949f96a
+numerical/H3_SSA_samples.csv,45,4,u1|u2|u3,"Normalized 3D samples; row order is sampling order, Fig. 11",53e158d98225871817a896def097102129f60ada703320ad581b7ac9ebd0ebed
+numerical/K_retention_figure.csv,9,4,panel|K,"Retention percentages, Fig. 5",425e61b19532873e2f56d23b4edc19aedf25de1b92bda37c36d697f88f4f29ae
+ranking/current_conditions2700.csv,2700,8,benchmark|repeat|step,Ranking-margin or current correlation-matrix checks in numerical supplement,0292732376a166a99c8eba1281281e4d84cec696ce92c7c1c2b375c17c315f1c
+ranking/current_condition_summary.csv,3,5,benchmark,Ranking-margin or current correlation-matrix checks in numerical supplement,b720af69ac540493f2a2f7505bcbebb22990200d9560a48ef8d5e4aebf8406c7
+ranking/ranking_checks300.csv,300,12,benchmark|replicate|n|K,Ranking-margin or current correlation-matrix checks in numerical supplement,52e39f09f7bfba8e34e6018965ee2ab6adfad0f0a87ef22eee331b37e0387024
+ranking/ranking_summary.csv,12,9,benchmark|K,Ranking-margin or current correlation-matrix checks in numerical supplement,173671989c4d61e62f1a496aa71f8ef8f1d464ec776edbbc505c8324d31bbb34
+timing/verified_trajectories.csv,27,12,benchmark|method|repeat,"Complete-cost records, Fig. 12, Table 4 and Computational-cost supplement",a081204c749847bf08314ed21693ad09a0c528690073f20d69e36dc2dcb29fee
+timing/summary9.csv,9,36,benchmark|method,"Complete-cost records, Fig. 12, Table 4 and Computational-cost supplement",202d983160f1a4710f385389d3ba2ee499f85b4eea5cad7ff414eb0bf99285c0
+timing/comparisons6.csv,6,8,benchmark|reference,"Complete-cost records, Fig. 12, Table 4 and Computational-cost supplement",af96ba468dd25fb9be06853eb24b4efc5ba46d35ae9c11a75cfbf980a26a6b15
+timing/load_attempts.csv,928,9,benchmark|method|repeat|step|attempt,"Complete-cost records, Fig. 12, Table 4 and Computational-cost supplement",70816919e02b9535a849a6bc9a6c1cd76351824a8b63ab3a9ee022bcbfe576db
+finite_element/training30.csv,30,6,sample_id,"Physical training inputs and responses, Fig. 17",2c5c7091df62650132ebc53bd6d51950c5f966ded73634473cb3d33ade1cb9b1
+finite_element/validation10.csv,10,11,validation_id,"Final independent validation pairs, Fig. 18",5c84bfefe6be5f054d9fa811f9dfc7a8ae2c328cc7e75979df9387efb906a01b
+finite_element/stage_validation60.csv,60,11,training_sample_count|validation_id,Six stages on the same ten validation locations,bc7272812a4b7594c6f43a7fa1ab8c728c0ec446310aa66b8aaed7afcf1ea528
+finite_element/stage_metrics26.csv,26,9,training_sample_count,"All 26 aggregate stages, Fig. 19",fed1bfb01538a06b9ee8daf5da869767fe8598ba7733caf7ee136d081f937fc3
+finite_element/bootstrap_intervals3.csv,3,6,metric,"Paired-bootstrap intervals, Fig. 18 and validation table",51dd0b13264d17f109846e137e56536db979330197ccf5fb8ea98406a2c07a90
+finite_element/training_runtime30.csv,30,4,sample_order,Recorded adaptive FE runtimes; initial five entries missing,341eb7c908a1915e52736bcbccb9266b87de1230b385fe258e7c93ef6b054343
+finite_element/final_metrics1.csv,1,7,training_count|validation_count,Final FE validation metrics,8cabeeb9c0a8b5466c063d0551fa3c07a1bf725351b504490055d0589bb88a29
