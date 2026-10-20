@@ -134,3 +134,12 @@ and runtime data; this numerical entry point does not launch Abaqus.
 them using Python's standard library. The MATLAB verification reports describe
 checks actually executed for this package. Computational performance is
 documented by the separately controlled measurements in the timing supplement.
+
+## License and citation
+
+FDCVV additions and modifications are distributed under the MIT License in
+`LICENSE`. Modified upstream framework portions retain Jan N. Fuhg's copyright
+and the original notice in `THIRD_PARTY_LICENSE_Fuhg_MIT.txt`.
+`CITATION.cff` provides the software citation for this repository. Please also
+cite the upstream framework and the methods used, as described above.
+A release version and DOI can be added to the citation file when assigned.

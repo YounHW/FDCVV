@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this implementation or its supporting data, please cite this software and the upstream framework identified in README.md."
+type: software
+title: "FDCVV: Fast Dynamic Cross-Validation Voronoi Adaptive Sampling"
+authors:
+  - family-names: Yang
+    given-names: Haowei
+repository-code: "https://github.com/YounHW/FDCVV"
+url: "https://github.com/YounHW/FDCVV"
+license: MIT
+abstract: "MATLAB implementation, benchmark configurations, verification routines and supporting data for FDCVV adaptive sampling, built on the StateOfTheArtAdaptiveSampling framework."
+keywords:
+  - adaptive sampling
+  - Kriging
+  - cross-validation
+  - Voronoi
+  - surrogate modeling
