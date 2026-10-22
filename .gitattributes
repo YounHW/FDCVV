@@ -1,0 +1,2 @@
+# Preserve distributed bytes so SHA256 verification works on every platform.
+* -text
