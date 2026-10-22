@@ -124,7 +124,7 @@ Saved data reports remain unchanged when a new trajectory is run.
 ## Data and provenance
 
 `data/README.md`, `data/file_index.csv` and `data/data_dictionary.csv` describe
-36 CSV data tables, their units, keys and source mappings. `tests` contains
+40 CSV data tables, their units, keys and source mappings. `tests` contains
 the fixed common numerical test sets and the compact FDCVV replay fixture.
 The code package runs with relative paths; original absolute source paths in
 provenance records identify the archive and are not runtime dependencies.
@@ -144,3 +144,18 @@ and the original notice in `THIRD_PARTY_LICENSE_Fuhg_MIT.txt`.
 `CITATION.cff` provides the software citation for this repository. Please also
 cite the upstream framework and the methods used, as described above.
 A release version and DOI can be added to the citation file when assigned.
+
+## Finite element data update, 22 October 2026
+
+The finite element dataset includes a 30-point training trajectory recalculated
+from point 13 onward and ten independent validation inputs. The final model
+has R2 = 0.93225, RMSE = 11.9011 um and NRMSE = 8.5035%.
+The update includes all 26 stage summaries, predictions at six stages,
+paired-bootstrap intervals, model/data binding records and prediction timings.
+The median time to evaluate all ten validation inputs is 0.730953 ms;
+model fitting took 4.9934929 s separately. The algorithm implementation and
+numerical benchmark results retain their verified versions.
+
+See `data/README.md` for units, statistical definitions and timing scope.
+Run `python VERIFY_FILES.py` after downloading or cloning to verify all
+distributed files. `.gitattributes` preserves the exported bytes across platforms.

@@ -1,0 +1,2 @@
+﻿validation_inputs,fe_file_timestamp_seconds,fe_file_timestamp_hours,fe_solver_wallclock_seconds,surrogate_median_seconds_per_10_points,fit_seconds,warmup_sweeps,technical_blocks,ten_point_sweeps_per_block
+10,147810.361884,41.05843385666667,147606.0,0.0007309530000000001,4.9934929,20,30,100

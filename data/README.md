@@ -1,11 +1,12 @@
 # FDCVV Benchmark and Finite Element Data
 
-This directory contains numerical benchmark, ranking, computational-cost and
-finite element datasets for FDCVV and comparison methods. Start with
+This directory contains benchmark, ranking, computational-cost and finite
+element datasets for FDCVV and comparison methods. Start with
 `file_index.csv` for relative filenames, row counts, keys, figure mappings and
 SHA256 hashes; `data_dictionary.csv` lists every column, storage type, unit and
 observed missing count. `provenance.csv` binds every packaged table to its source.
-All data tables are byte-identical copies of the cited local exports.
+Raw tables retain the supplied exports. Derived FE summaries and intervals are
+recomputed as described below; provenance.csv binds each table to its source.
 
 ## Reading and structure
 
@@ -51,7 +52,7 @@ mean_gap_pct. Each metric has its own minimum. Descriptive rank ranks these
 summaries. In paired ablation tables, difference is control minus Full and
 relative_pct is 100*(control mean/Full mean-1). Wins mean lower Full NRMSE.
 The Holm suffix adjusts across the 21 ablation comparisons. CI low/high fields
-are pointwise 95% bootstrap bounds.
+are pointwise 95% bootstrap bounds; see the Numerical supplement for resampling.
 Mean, median, min and max suffixes describe the named quantity; std is sample
 standard deviation. Summary n is the number of trajectories in that group.
 LOOCV exact denotes the saved reconstruction reference; fast denotes the matrix
@@ -74,28 +75,56 @@ wait_s, test_s and trace_io_s are recorded separately. load_attempts.csv has
 928 formal attempts; accepted=1 selects 837 adopted operations, while 91
 attempts are excluded from the adopted cost. Nine warmups are excluded.
 
-## Finite element data
+## Finite element data: corrected trajectory, 22 October 2026
+
+The author supplied a new trajectory recalculated from training point 13 onward
+and confirmed that these responses were obtained from manual finite element
+calculations. Rows 1-12 are retained; the new complete training set has 30
+positive responses. training_response_provenance30.csv records this origin.
+Old processing labels are retained in the historical local audit, not attached
+to the changed inputs of this replacement trajectory.
 
 Training and validation are separate sets of 30 and 10 points. TD is delay in
-seconds; OMEGA2 is propellant mass in kg; MH (also denoted M_C) is piston mass in kg. response and observed/predicted fields are in metres; suffix _um
-uses micrometres and prediction_variance uses square metres.
-validation10.csv is the final 30-point model; stage_validation60.csv contains
-six stages (5,10,15,20,25,30) on the same ten validation locations.
-stage_metrics26.csv retains aggregate metrics for all sizes 5-30. It does not
-imply per-point predictions are provided for the other 20 intermediate sizes.
-FE NRMSE uses the observed validation-response range; percentage columns
-multiply this ratio by 100. bootstrap_intervals3.csv uses 100000 paired draws,
-seed 26100506, with the model fixed and original observed range retained.
-training_runtime30.csv contains the 25 adaptive durations; the five reused
-initial rows have missing duration fields. Seconds and hours are both retained.
+seconds; OMEGA2 is propellant mass in kg; MH is piston mass in kg (M_C in the
+manuscript). Responses are in metres, _um fields in micrometres, and prediction
+variance in square metres. validation10.csv contains the final model predictions;
+stage_validation60.csv contains six stages (5,10,15,20,25,30) on the same ten
+validation inputs. stage_metrics26.csv retains all stages 5-30; the six stages
+with pointwise predictions and final_metrics1.csv are recomputed from those
+pairs. Other stages retain the supplied aggregate results. Missing MAE/max-error
+values at the other twenty stages are blank, not zero.
 
-## Scope and integrity
+FE NRMSE divides RMSE by the fixed observed validation-response range. The final
+R2 is 0.9322546102, RMSE 11.90110528 um and NRMSE 8.503521106 percent.
+bootstrap_intervals3.csv uses 100000 paired resamples of the ten validation pairs,
+NumPy default_rng PCG64, seed 26100506, with the model and original response
+range fixed. The 2.5th and 97.5th percentiles use linear interpolation.
+bootstrap_protocol.json records the complete protocol and prediction-table hash.
 
-The file index covers the numerical, ranking, timing and current FE data shipped
-here. Source exports and original hash columns are preserved. The old
-stopping_reference_outcomes270.csv belongs to another configuration and is not
-part of this adopted-configuration package. Historical FE bootstrap exports
-are likewise superseded by the current recomputed interval table.
-The tables retain the exported observations, summary statistics and source
-identifiers. The repository-level README describes the implementation and
-verification procedures.
+The 30-point model was refitted with the frozen MS fitting procedure and seed
+261016030. Its ten predictions agree with the supplied table within
+1.24e-17 m. model_binding.json records the exact input and prediction hashes.
+
+## Response-evaluation timing
+
+Table 9 uses the same ten independent validation inputs. Their archived finite
+element status-file intervals total 147810.361884 seconds (41.05843 h). Internal
+solver wall-clock records total 147606 seconds and are retained separately.
+The fitted new model was timed in single-threaded MATLAB R2022b: 20 warm-up
+sweeps followed by 30 technical blocks of 100 ten-input sweeps. The median
+per ten inputs is 0.730953 ms; fitting took 4.9934929 s separately. Timing
+includes input normalization and mean/variance prediction, excluding model
+fitting, loading, warm-up and output. Raw blocks and environment are included.
+
+training_runtime30.csv preserves the supplied adaptive-duration export. Its
+numeric durations match the preceding export and have not been independently
+rebound to the recalculated training trajectory. This table is not used for
+Table 9. The initial five duration fields are missing.
+
+## Scope
+
+The forty CSV data tables retain all numerical, ranking and complete-loop timing
+evidence. Only the FE trajectory, derived summaries, prediction measurements and
+related metadata were replaced. The manuscript and supplements describe the
+scientific methods. Absolute source paths document local provenance and are
+not required to read the portable tables.

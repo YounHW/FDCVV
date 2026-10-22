@@ -1,0 +1,12 @@
+{
+  "replicates": 100000,
+  "sample_size": 10,
+  "seed": 26100506,
+  "generator": "numpy.default_rng PCG64",
+  "interval": "percentile 2.5 and 97.5, linear quantile interpolation",
+  "paired": true,
+  "model_fixed": true,
+  "NRMSE_denominator_m": 0.00013995502717504277,
+  "finite_R_squared_draws": 100000,
+  "prediction_source_sha256": "30e67337b13ab682914ae7bffff70f5d26e5d66321670b0569f9853e07596928"
+}

@@ -1,4 +1,4 @@
-file,field,storage_type,unit,description,missing_count,missing_tokens,primary_key
+﻿file,field,storage_type,unit,description,missing_count,missing_tokens,primary_key
 numerical/baseline_endpoints540.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
 numerical/baseline_endpoints540.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
 numerical/baseline_endpoints540.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
@@ -341,8 +341,8 @@ finite_element/stage_metrics26.csv,RMSE_m,float64,m,RMSE m,0,empty field / NaN,F
 finite_element/stage_metrics26.csv,NRMSE,float64,ratio,FE RMSE / observed response range,0,empty field / NaN,False
 finite_element/stage_metrics26.csv,RMSE_um,float64,um,RMSE um,0,empty field / NaN,False
 finite_element/stage_metrics26.csv,NRMSE_percent,float64,%,NRMSE percent; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
-finite_element/stage_metrics26.csv,MAE_m,float64,m,MAE m,20,empty field / NaN,False
-finite_element/stage_metrics26.csv,maximum_absolute_error_m,float64,m,maximum absolute error m,20,empty field / NaN,False
+finite_element/stage_metrics26.csv,MAE_m,float64,m,Mean absolute error; available at the six stages with pointwise predictions,20,empty field / NaN,False
+finite_element/stage_metrics26.csv,maximum_absolute_error_m,float64,m,Maximum absolute error; available at the six stages with pointwise predictions,20,empty field / NaN,False
 finite_element/bootstrap_intervals3.csv,metric,object,label,metric identifier; definitions in README,0,empty field / NaN,True
 finite_element/bootstrap_intervals3.csv,estimate,float64,metric dependent,"Point estimate or 95% bound; R2 dimensionless, RMSE_um in um, NRMSE_pct in percent",0,empty field / NaN,False
 finite_element/bootstrap_intervals3.csv,low,float64,metric dependent,"Point estimate or 95% bound; R2 dimensionless, RMSE_um in um, NRMSE_pct in percent",0,empty field / NaN,False
@@ -360,3 +360,36 @@ finite_element/final_metrics1.csv,NRMSE,float64,ratio,FE RMSE / observed respons
 finite_element/final_metrics1.csv,MAE,float64,m,FE mean absolute validation error,0,empty field / NaN,False
 finite_element/final_metrics1.csv,max_absolute_error,float64,m,FE maximum absolute validation error,0,empty field / NaN,False
 finite_element/final_metrics1.csv,R_squared,float64,dimensionless,Coefficient of determination,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,validation_id,int64,identifier,validation id,0,empty field / NaN,True
+finite_element/validation10_solver_times.csv,sample_id,object,identifier,sample id,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,TD,float64,s,TD,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,OMEGA2,float64,kg,OMEGA2,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,MH,float64,kg,MH,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,observed_response_m,float64,m,observed response m,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,fe_solver_wallclock_seconds,int64,s,Sum of WALLCLOCK TIME (SEC) entries; separate from the current Table 9 timestamp endpoint,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,fe_solver_wallclock_hours,float64,h,Solver wall-clock seconds divided by 3600,0,empty field / NaN,False
+finite_element/validation10_solver_times.csv,previous_file_timestamp_seconds,float64,s,Status-file creation-to-last-write elapsed time; used in current Table 9,0,empty field / NaN,False
+finite_element/prediction_timing_raw.csv,technical_block,int64,identifier,"Technical timing repetition, not an independent validation set",0,empty field / NaN,True
+finite_element/prediction_timing_raw.csv,ten_point_sweeps,int64,count,ten point sweeps,0,empty field / NaN,False
+finite_element/prediction_timing_raw.csv,elapsed_seconds,float64,s,elapsed seconds,0,empty field / NaN,False
+finite_element/prediction_timing_raw.csv,seconds_per_10_points,float64,s,Elapsed block time divided by the number of complete ten-input sweeps,0,empty field / NaN,False
+finite_element/prediction_timing_raw.csv,seconds_per_point,float64,s,Elapsed block time divided by sweeps times ten,0,empty field / NaN,False
+finite_element/prediction_timing_raw.csv,checksum,float64,m,Accumulated prediction check value for the timing block,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,validation_inputs,int64,count,validation inputs,0,empty field / NaN,True
+finite_element/prediction_timing_summary1.csv,fe_file_timestamp_seconds,float64,s,fe file timestamp seconds,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,fe_file_timestamp_hours,float64,h,fe file timestamp hours,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,fe_solver_wallclock_seconds,int64,s,Sum of WALLCLOCK TIME (SEC) entries; separate from the current Table 9 timestamp endpoint,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,surrogate_median_seconds_per_10_points,float64,s,surrogate median seconds per 10 points,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,fit_seconds,float64,s,fit seconds,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,warmup_sweeps,int64,count,warmup sweeps,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,technical_blocks,int64,count,technical blocks,0,empty field / NaN,False
+finite_element/prediction_timing_summary1.csv,ten_point_sweeps_per_block,int64,count,ten point sweeps per block,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,sample_order,int64,identifier,sample order,0,empty field / NaN,True
+finite_element/training_response_provenance30.csv,sample_id,object,identifier,sample id,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,TD,float64,s,TD,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,OMEGA2,float64,kg,OMEGA2,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,MH,float64,kg,MH,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,response_m,float64,m,response m,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,response_um,float64,um,response um,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,response_source,object,label,completed_FE for retained rows 1-12; manual_FE_author_confirmed for the recalculated rows 13-30,0,empty field / NaN,False
+finite_element/training_response_provenance30.csv,source_basis,object,label,"Basis for the new trajectory response origin, confirmed by the author on 2026-10-22",0,empty field / NaN,False

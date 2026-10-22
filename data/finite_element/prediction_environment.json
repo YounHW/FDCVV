@@ -1,0 +1,10 @@
+{
+  "MATLAB_version": "9.13.0.2049777 (R2022b)",
+  "computer": "PCWIN64",
+  "threads": 1,
+  "fit_seed": 2.6101603E+8,
+  "model_source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\scls_positive_response_revision_20261022\\refit\\source\\OK_model.m",
+  "optimizer_source": "D:\\Codex_Workspeace\\adaptive sampling\\revision\\scls_positive_response_revision_20261022\\refit\\source\\optimizationTools.m",
+  "timestamp": "2026-10-22 17:17:36 +0800",
+  "timing_protocol": "Fixed-model sequential prediction of all ten physical inputs, including input scaling and original prediction mean/variance. Fit, loading, warmup, evaluation metrics and file IO excluded."
+}

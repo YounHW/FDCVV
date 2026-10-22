@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "training_sha256": "364fd77e9ec0a2ec195b4e212c9dda8491e400ef4a39765915f788b16f2539cf",
+  "predictions_sha256": "30e67337b13ab682914ae7bffff70f5d26e5d66321670b0569f9853e07596928",
+  "controlled_refit_seed": 261016030,
+  "max_prediction_difference_m": 1.231247092128851e-17,
+  "author_confirmed_recalculation_start_order": 13,
+  "training_runtime_scope": "As-exported values; numeric durations match the previous package and have not been independently rebound to the recalculated trajectory. Not used in Table 9."
+}
