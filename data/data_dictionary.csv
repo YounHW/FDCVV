@@ -1,9 +1,9 @@
-﻿file,field,storage_type,unit,description,missing_count,missing_tokens,primary_key
+file,field,storage_type,unit,description,missing_count,missing_tokens,primary_key
 numerical/baseline_endpoints540.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
 numerical/baseline_endpoints540.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
 numerical/baseline_endpoints540.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
-numerical/baseline_endpoints540.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/baseline_endpoints540.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,native_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/baseline_endpoints540.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/baseline_endpoints540.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
 numerical/baseline_endpoints540.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
@@ -17,16 +17,16 @@ numerical/baseline_curves16200.csv,version,object,label,version identifier; defi
 numerical/baseline_curves16200.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
 numerical/baseline_curves16200.csv,step,int64,count or index,step,0,empty field / NaN,True
 numerical/baseline_curves16200.csv,samples,int64,count or index,samples,0,empty field / NaN,False
-numerical/baseline_curves16200.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,native_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/baseline_curves16200.csv,native_r2,float64,dimensionless,native r2,0,empty field / NaN,False
-numerical/baseline_curves16200.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/baseline_curves16200.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/baseline_curves16200.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
 numerical/endpoints720.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
 numerical/endpoints720.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
 numerical/endpoints720.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
-numerical/endpoints720.csv,native_nrmse,float64,dimensionless,native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/endpoints720.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/endpoints720.csv,native_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. native nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/endpoints720.csv,common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/endpoints720.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/endpoints720.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
 numerical/endpoints720.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
@@ -38,11 +38,11 @@ numerical/endpoints720.csv,curve_sha256,object,hex string,SHA256 of original sou
 numerical/paired_effects21.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
 numerical/paired_effects21.csv,version,object,label,version identifier; definitions in README,0,empty field / NaN,True
 numerical/paired_effects21.csv,n,int64,count or index,n,0,empty field / NaN,False
-numerical/paired_effects21.csv,full_mean,float64,NRMSE ratio,Mean common-test NRMSE of Full,0,empty field / NaN,False
-numerical/paired_effects21.csv,control_mean,float64,NRMSE ratio,Mean common-test NRMSE of control,0,empty field / NaN,False
-numerical/paired_effects21.csv,difference,float64,NRMSE ratio,Control mean minus Full mean,0,empty field / NaN,False
-numerical/paired_effects21.csv,difference_ci_low,float64,NRMSE ratio,difference ci low; paired control minus Full,0,empty field / NaN,False
-numerical/paired_effects21.csv,difference_ci_high,float64,NRMSE ratio,difference ci high; paired control minus Full,0,empty field / NaN,False
+numerical/paired_effects21.csv,full_mean,float64,NRMSE ratio,Paired comparison using true_nrmse (fixed common-test true-response range),0,empty field / NaN,False
+numerical/paired_effects21.csv,control_mean,float64,NRMSE ratio,Paired comparison using true_nrmse (fixed common-test true-response range),0,empty field / NaN,False
+numerical/paired_effects21.csv,difference,float64,NRMSE ratio,Paired comparison using true_nrmse (fixed common-test true-response range),0,empty field / NaN,False
+numerical/paired_effects21.csv,difference_ci_low,float64,NRMSE ratio,Paired comparison using true_nrmse (fixed common-test true-response range),0,empty field / NaN,False
+numerical/paired_effects21.csv,difference_ci_high,float64,NRMSE ratio,Paired comparison using true_nrmse (fixed common-test true-response range),0,empty field / NaN,False
 numerical/paired_effects21.csv,relative_pct,float64,%,100*(control mean/Full mean - 1),0,empty field / NaN,False
 numerical/paired_effects21.csv,relative_ci_low,float64,dimensionless,relative ci low,0,empty field / NaN,False
 numerical/paired_effects21.csv,relative_ci_high,float64,dimensionless,relative ci high,0,empty field / NaN,False
@@ -61,7 +61,7 @@ numerical/lambda_endpoints2250.csv,lambda0,float64,dimensionless,Initial varianc
 numerical/lambda_endpoints2250.csv,p_cross,float64,fraction,Progress at variance-distance equal weighting,0,empty field / NaN,False
 numerical/lambda_endpoints2250.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,True
 numerical/lambda_endpoints2250.csv,common_rmse,float64,response units,common rmse; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_endpoints2250.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/lambda_endpoints2250.csv,common_r2,float64,dimensionless,common r2,0,empty field / NaN,False
 numerical/lambda_endpoints2250.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
 numerical/lambda_endpoints2250.csv,reused,bool,boolean,Existing accepted result reused in this collection,0,empty field / NaN,False
@@ -74,17 +74,17 @@ numerical/lambda_summary75.csv,common_rmse_std,float64,response units,common rms
 numerical/lambda_summary75.csv,common_rmse_median,float64,response units,common rmse median; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_rmse_min,float64,response units,common rmse min; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_rmse_max,float64,response units,common rmse max; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_summary75.csv,common_nrmse_mean,float64,dimensionless,common nrmse mean; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_summary75.csv,common_nrmse_std,float64,dimensionless,common nrmse std; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_summary75.csv,common_nrmse_median,float64,dimensionless,common nrmse median; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_summary75.csv,common_nrmse_min,float64,dimensionless,common nrmse min; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/lambda_summary75.csv,common_nrmse_max,float64,dimensionless,common nrmse max; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_mean,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_std,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse std; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_median,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse median; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_min,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse min; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/lambda_summary75.csv,common_nrmse_max,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse max; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_r2_mean,float64,dimensionless,common r2 mean,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_r2_std,float64,dimensionless,common r2 std,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_r2_median,float64,dimensionless,common r2 median,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_r2_min,float64,dimensionless,common r2 min,0,empty field / NaN,False
 numerical/lambda_summary75.csv,common_r2_max,float64,dimensionless,common r2 max,0,empty field / NaN,False
-numerical/lambda_cross_benchmark_gap50.csv,metric,object,label,metric identifier; definitions in README,0,empty field / NaN,True
+numerical/lambda_cross_benchmark_gap50.csv,metric,object,label,common_rmse or true_nrmse; their benchmark-relative gaps are identical under fixed response-range normalization,0,empty field / NaN,True
 numerical/lambda_cross_benchmark_gap50.csv,config,object,label,config identifier; definitions in README,0,empty field / NaN,True
 numerical/lambda_cross_benchmark_gap50.csv,lambda0,float64,dimensionless,Initial variance weight lambda_0,0,empty field / NaN,False
 numerical/lambda_cross_benchmark_gap50.csv,p_cross,float64,fraction,Progress at variance-distance equal weighting,0,empty field / NaN,False
@@ -121,7 +121,7 @@ numerical/loocv_pointwise_results.csv,absolute_deviation,float64,response units,
 numerical/loocv_pointwise_results.csv,pointwise_relative_error,float64,dimensionless,pointwise relative error,0,empty field / NaN,False
 numerical/spatial_representatives6.csv,method,object,label,method identifier; definitions in README,0,empty field / NaN,True
 numerical/spatial_representatives6.csv,repeat,int64,identifier,Complete trajectory identifier; steps on a trajectory are repeated observations,0,empty field / NaN,False
-numerical/spatial_representatives6.csv,common_nrmse,float64,dimensionless,common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/spatial_representatives6.csv,common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/spatial_representatives6.csv,source_folder,object,path string,Original Windows provenance path; not needed to read packaged data,0,empty field / NaN,False
 numerical/H3_truth_slice.csv,u1,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
 numerical/H3_truth_slice.csv,u2,float64,dimensionless,"Normalized design coordinate in [0,1]",0,empty field / NaN,True
@@ -144,8 +144,8 @@ numerical/stopping_current_outcomes270.csv,saved_points,int64,count,Enrichment e
 numerical/stopping_current_outcomes270.csv,training_n,int64,count or index,training n,0,empty field / NaN,False
 numerical/stopping_current_outcomes270.csv,stop_rmse,float64,response units,stop rmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/stopping_current_outcomes270.csv,full_rmse,float64,response units,full rmse; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_current_outcomes270.csv,stop_common_nrmse,float64,dimensionless,stop common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_current_outcomes270.csv,full_common_nrmse,float64,dimensionless,full common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,stop_common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. stop common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,full_common_nrmse,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. full common nrmse; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/stopping_current_outcomes270.csv,stop_r2,float64,dimensionless,stop r2,0,empty field / NaN,False
 numerical/stopping_current_outcomes270.csv,full_r2,float64,dimensionless,full r2,0,empty field / NaN,False
 numerical/stopping_summary9.csv,benchmark,object,label,benchmark identifier; definitions in README,0,empty field / NaN,True
@@ -166,14 +166,14 @@ numerical/stopping_summary9.csv,rmse_difference_ci_high,float64,response units,r
 numerical/stopping_summary9.csv,rmse_relative_pct,float64,%,rmse relative pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
 numerical/stopping_summary9.csv,rmse_relative_ci_low,float64,response units,rmse relative ci low; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/stopping_summary9.csv,rmse_relative_ci_high,float64,response units,rmse relative ci high; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_stop_mean,float64,dimensionless,common nrmse stop mean; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_full_mean,float64,dimensionless,common nrmse full mean; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_difference,float64,dimensionless,common nrmse difference; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_difference_ci_low,float64,dimensionless,common nrmse difference ci low; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_difference_ci_high,float64,dimensionless,common nrmse difference ci high; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_relative_pct,float64,%,common nrmse relative pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_relative_ci_low,float64,dimensionless,common nrmse relative ci low; normalization and suffix conventions in README,0,empty field / NaN,False
-numerical/stopping_summary9.csv,common_nrmse_relative_ci_high,float64,dimensionless,common nrmse relative ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_stop_mean,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse stop mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_full_mean,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse full mean; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse difference; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference_ci_low,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse difference ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_difference_ci_high,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse difference ci high; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_pct,float64,%,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse relative pct; relative benchmark gaps use each benchmark grid minimum,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_ci_low,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse relative ci low; normalization and suffix conventions in README,0,empty field / NaN,False
+numerical/stopping_summary9.csv,common_nrmse_relative_ci_high,float64,dimensionless,Legacy prediction-range normalization; not the primary numerical comparison metric. common nrmse relative ci high; normalization and suffix conventions in README,0,empty field / NaN,False
 numerical/stopping_summary9.csv,r2_stop_mean,float64,dimensionless,r2 stop mean,0,empty field / NaN,False
 numerical/stopping_summary9.csv,r2_full_mean,float64,dimensionless,r2 full mean,0,empty field / NaN,False
 numerical/stopping_summary9.csv,r2_difference,float64,dimensionless,r2 difference,0,empty field / NaN,False
@@ -393,3 +393,27 @@ finite_element/training_response_provenance30.csv,response_m,float64,m,response 
 finite_element/training_response_provenance30.csv,response_um,float64,um,response um,0,empty field / NaN,False
 finite_element/training_response_provenance30.csv,response_source,object,label,completed_FE for retained rows 1-12; manual_FE_author_confirmed for the recalculated rows 13-30,0,empty field / NaN,False
 finite_element/training_response_provenance30.csv,source_basis,object,label,"Basis for the new trajectory response origin, confirmed by the author on 2026-10-22",0,empty field / NaN,False
+numerical/baseline_curves16200.csv,test_response_range,float64,response,Fixed maximum minus minimum of true common-test responses,0,empty field / NaN,False
+numerical/baseline_curves16200.csv,true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,test_response_range,float64,response,Fixed maximum minus minimum of true common-test responses,0,empty field / NaN,False
+numerical/baseline_endpoints540.csv,true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/endpoints720.csv,test_response_range,float64,response,Fixed maximum minus minimum of true common-test responses,0,empty field / NaN,False
+numerical/endpoints720.csv,true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,test_response_range,float64,response,Fixed maximum minus minimum of true common-test responses,0,empty field / NaN,False
+numerical/lambda_endpoints2250.csv,true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_summary75.csv,true_nrmse_mean,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_summary75.csv,true_nrmse_std,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_summary75.csv,true_nrmse_median,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_summary75.csv,true_nrmse_min,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/lambda_summary75.csv,true_nrmse_max,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/paired_effects21.csv,metric,object,label,Metric underlying all paired contrasts: true_nrmse,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,stop_true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_current_outcomes270.csv,full_true_nrmse,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_stop_mean,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_full_mean,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_difference,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_difference_ci_low,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_difference_ci_high,float64,fraction,NRMSE = common-test RMSE / fixed true-response range; dimensionless fraction; see normalization_protocol.json,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_relative_pct,float64,percent,Percentage change at stopping relative to the full-budget mean; fixed true-response normalization; pointwise paired-bootstrap intervals where indicated,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_relative_ci_low,float64,percent,Percentage change at stopping relative to the full-budget mean; fixed true-response normalization; pointwise paired-bootstrap intervals where indicated,0,empty field / NaN,False
+numerical/stopping_summary9.csv,true_nrmse_relative_ci_high,float64,percent,Percentage change at stopping relative to the full-budget mean; fixed true-response normalization; pointwise paired-bootstrap intervals where indicated,0,empty field / NaN,False

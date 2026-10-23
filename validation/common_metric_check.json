@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "entry": "CHECK_COMMON_METRICS",
+  "exit_code": 0,
+  "new_fits": 0,
+  "new_true_evaluations": 0,
+  "checks": [
+    "same RMSE and true NRMSE for predictions with different ranges",
+    "legacy prediction-range field retained",
+    "constant predictions retain finite primary error",
+    "perfect predictions",
+    "three supplied common test sets"
+  ],
+  "source_sha256": {
+    "RUN_ONE_CASE.m": "342c213d3f0509a8153f4cc71af45387ba3dfb34836fe737d8e24300f875792f",
+    "COMMON_TEST_METRICS.m": "a7f986967b43021080bceff9c176704bb727d213b8dc90020a31847283629882",
+    "CHECK_COMMON_METRICS.m": "ed9dae1ba2f43c85ca790eba3966c662a6e140bb49bda2aa0540197192dd0254"
+  }
+}

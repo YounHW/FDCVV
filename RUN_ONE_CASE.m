@@ -45,15 +45,18 @@ for t=1:30
     end
 end
 writetable(curve,'native_convergence.csv');
-test=load(fullfile(root,'tests',[char(benchmark) '_test.mat']));common=zeros(30,5);
+test=load(fullfile(root,'tests',[char(benchmark) '_test.mat']));
+truth=test.truth(:);truth_span=max(truth)-min(truth);
+assert(all(isfinite(truth)) && truth_span>0,'Common-test truth must have positive finite range');
+common=zeros(30,7);
 for t=1:30
  pred=zeros(size(test.U,1),1);for j=1:numel(pred),pred(j)=models{t}.predict(test.U(j,:));end
- rmse=sqrt(mean((pred-test.truth).^2));span=max(pred)-min(pred);assert(span>0);
- common(t,:)=[t models{t}.m rmse rmse/span 1-sum((pred-test.truth).^2)/sum((test.truth-mean(test.truth)).^2)];
+ common(t,:)=[t models{t}.m COMMON_TEST_METRICS(pred,truth,truth_span)];
 end
-writetable(array2table(common,'VariableNames',{'step','samples','common_rmse','common_nrmse','common_r2'}),'common_convergence.csv');
+writetable(array2table(common,'VariableNames',{'step','samples','common_rmse','common_nrmse','common_r2','test_response_range','true_nrmse'}),'common_convergence.csv');
 accepted=struct('status','PASS','method',method,'benchmark',benchmark, ...
-    'repeat',repeat,'seed',seed,'steps',30,'matlab',version);
+    'repeat',repeat,'seed',seed,'steps',30,'matlab',version, ...
+    'primary_metric','true_nrmse','test_response_range',truth_span);
 save('accepted.mat','accepted');
 fprintf('PASS %s %s repeat %d\n',method,benchmark,repeat);
 end

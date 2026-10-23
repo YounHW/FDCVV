@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "weight_screening_rows": 225,
+  "weight_candidate": "l35c10",
+  "score": 0.9053408729953395,
+  "followup_rows": 45,
+  "shared_final_endpoints": 90,
+  "developmental_subsets": [
+    {
+      "file": "K_schedule_pilot_endpoints210.csv",
+      "matched_endpoints": 15
+    },
+    {
+      "file": "K_schedule_extend15_candidate45.csv",
+      "matched_endpoints": 45
+    },
+    {
+      "file": "K_schedule_extend30_endpoints360.csv",
+      "matched_endpoints": 90
+    }
+  ],
+  "new_model_fits": 0
+}

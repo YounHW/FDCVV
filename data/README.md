@@ -5,8 +5,9 @@ element datasets for FDCVV and comparison methods. Start with
 `file_index.csv` for relative filenames, row counts, keys, figure mappings and
 SHA256 hashes; `data_dictionary.csv` lists every column, storage type, unit and
 observed missing count. `provenance.csv` binds every packaged table to its source.
-Raw tables retain the supplied exports. Derived FE summaries and intervals are
-recomputed as described below; provenance.csv binds each table to its source.
+Raw RMSE, R2 and trajectory identifiers retain the supplied exports. Numerical
+NRMSE and its derived statistics use the fixed true-response range described
+below. Derived FE summaries and intervals retain their verified version.
 
 ## Reading and structure
 
@@ -17,6 +18,8 @@ retain their original True/False or 0/1 representation. Keys are listed in the
 index, separated by `|`. Data directories use relative paths and work after
 unzipping on another computer. Absolute source paths retained in provenance
 columns describe the original archive and are not import dependencies.
+Paths beginning with `../` refer to the repository or complete code-package
+root; the standalone machine-readable archive contains this data directory.
 
 Python example: `pd.read_csv('numerical/baseline_endpoints540.csv')`.
 MATLAB example: `readtable('finite_element/validation10.csv')`.
@@ -39,20 +42,38 @@ The frozen full configuration uses K=4,3,2 with transitions at enrichment
 fractions 1/3 and 1/2, lambda0=0.35 and p_cross=0.10, and within-region
 normalization. Version/config labels identify each control or lambda setting.
 
+The same 90 FDCVV trajectories are used in the baseline, the Full ablation and
+the retained weight-grid cell. Some of these runs participated in parameter
+and schedule development. No separate confirmation experiment was performed
+after the final configuration was fixed. See `../development/stage_index.csv`
+and `../development/trajectory_reuse90.csv` for the stage and reuse mappings.
+
 ## Quantities and statistical suffixes
 
 Numerical `common_*` fields use the fixed common test set. RMSE has function
-response units. Numerical NRMSE is RMSE divided by the fitted model's predicted
-response range on that test set. R2 is 1-SSE/SST. Native fields preserve original
-exports but do not supply the adopted common-test comparisons.
+response units; R2 is 1-SSE/SST. The primary `true_nrmse` field divides
+`common_rmse` by the fixed range of true responses, shared by all methods and
+stages within each benchmark. It is a dimensionless fraction.
+`common_nrmse` and `native_nrmse` retain the original prediction-range
+normalization as legacy exports. `normalization_protocol.json` gives the test
+set hashes, fixed denominators and affected derived tables.
 
 The sensitivity gap is 100*(configuration mean / benchmark grid-minimum mean - 1).
 The maximum and arithmetic mean of the three gaps are worst_gap_pct and
-mean_gap_pct. Each metric has its own minimum. Descriptive rank ranks these
-summaries. In paired ablation tables, difference is control minus Full and
-relative_pct is 100*(control mean/Full mean-1). Wins mean lower Full NRMSE.
+mean_gap_pct. RMSE and fixed-range NRMSE have identical relative gaps. Descriptive rank ranks
+these summaries. The retained weights were selected in earlier developmental
+screening; the later grid supports their sensitivity assessment. In paired ablation tables, difference is control minus Full and
+relative_pct is 100*(control mean/Full mean-1). Wins mean lower Full `true_nrmse`.
 The Holm suffix adjusts across the 21 ablation comparisons. CI low/high fields
-are pointwise 95% bootstrap bounds; see the Numerical supplement for resampling.
+are pointwise 95% paired-bootstrap bounds. `../REBUILD_STATISTICS.py` reconstructs
+the statistics with 20,000 resamples, using NumPy default_rng seeds 20261013
+for ablations and 26101405 for stopping. Percentiles use linear interpolation.
+Ablation t-tests are two-sided paired tests with 29 degrees of freedom.
+Sign-flip tests use 100,000 draws from the ablation RNG stream, a two-sided
+absolute mean-difference statistic, and the (extreme+1)/(draws+1) correction.
+Holm correction is applied separately to each test family of 21 comparisons.
+The ablation RNG draws one bootstrap index matrix per benchmark and then
+sign-flip matrices in the control order specified by the reconstruction script.
 Mean, median, min and max suffixes describe the named quantity; std is sample
 standard deviation. Summary n is the number of trajectories in that group.
 LOOCV exact denotes the saved reconstruction reference; fast denotes the matrix
@@ -123,8 +144,11 @@ Table 9. The initial five duration fields are missing.
 
 ## Scope
 
-The forty CSV data tables retain all numerical, ranking and complete-loop timing
-evidence. Only the FE trajectory, derived summaries, prediction measurements and
-related metadata were replaced. The manuscript and supplements describe the
-scientific methods. Absolute source paths document local provenance and are
-not required to read the portable tables.
+The forty CSV data tables contain numerical, ranking, complete-loop timing and
+finite element results. The numerical update adds `true_nrmse` and synchronizes
+its derived effects, sensitivity gaps and stopping summaries. Original RMSE,
+R2, trajectories, stopping decisions, FE files and timing files are unchanged.
+The separately indexed `../development` directory contains historical parameter
+records. Absolute source paths document local provenance and are not required
+to read the portable tables. Run `python REBUILD_STATISTICS.py --check` from
+the repository root to reconstruct and check the nine affected numerical tables.

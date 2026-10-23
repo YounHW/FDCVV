@@ -1,0 +1,64 @@
+{
+  "primary_metric": "true_nrmse = common_rmse / (max(truth) - min(truth))",
+  "unit": "dimensionless fraction (multiply by 100 for percent)",
+  "test_sets": {
+    "GL1D": {
+      "minimum": -8.237133541581283,
+      "maximum": 42.276129373674515,
+      "response_range": 50.513262915255794,
+      "n": 20000,
+      "test_sha256": "a3e0c31846dc5bf63323c65cc0003f369cda18a610fbdf6ebfd17a72769fbcad"
+    },
+    "Peaks2D": {
+      "minimum": -6.545754313282773,
+      "maximum": 8.105460848413436,
+      "response_range": 14.651215161696209,
+      "n": 30000,
+      "test_sha256": "e019c701633e11cc97bf9c7188df69b6fc33c80e8f1b1b13e48f06ebaf4aa301"
+    },
+    "H3_historical": {
+      "minimum": -3.8356591142297933,
+      "maximum": -6.698052076094543e-29,
+      "response_range": 3.8356591142297933,
+      "n": 30000,
+      "test_sha256": "1155c0758b6265430dee6051d0a43700050cec5fac85296b93c213faaa4dadcb"
+    }
+  },
+  "unchanged": "All raw RMSE, R2, predictions, trajectories, seeds, K, lambda, finite-element and timing records",
+  "legacy_fields": "native_nrmse and common_nrmse retain the original prediction-range normalization; common denotes test-set sharing, not denominator sharing.",
+  "derived_tables": "paired_effects21 and the true_nrmse rows of lambda_cross_benchmark_gap50 use the corrected primary metric",
+  "parameter_selection": "Earlier developmental screening selected lambda=(0.35,0.10); the later 5x5 grid and worst-gap summary provide retrospective sensitivity support.",
+  "changed_tables": [
+    "numerical/baseline_curves16200.csv",
+    "numerical/baseline_endpoints540.csv",
+    "numerical/endpoints720.csv",
+    "numerical/lambda_cross_benchmark_gap50.csv",
+    "numerical/lambda_endpoints2250.csv",
+    "numerical/lambda_summary75.csv",
+    "numerical/paired_effects21.csv",
+    "numerical/stopping_current_outcomes270.csv",
+    "numerical/stopping_summary9.csv"
+  ],
+  "reconstruction_entry": "../REBUILD_STATISTICS.py",
+  "execution_entry": "../RUN_ONE_CASE.m",
+  "execution_primary_field": "true_nrmse",
+  "development_history": "../development/README.md",
+  "previous_public_commit": "f1e7dc0b480c81f7148466cd95baa3e113d79541",
+  "reconstruction_inputs": [
+    "numerical/baseline_endpoints540.csv:common_rmse",
+    "numerical/baseline_curves16200.csv:common_rmse",
+    "numerical/endpoints720.csv:common_rmse",
+    "numerical/lambda_endpoints2250.csv:common_rmse",
+    "numerical/stopping_current_outcomes270.csv:stop_rmse,full_rmse",
+    "../tests/*_test.mat:truth"
+  ],
+  "statistical_protocol": {
+    "bootstrap_draws": 20000,
+    "ablation_seed": 20261013,
+    "stopping_seed": 26101405,
+    "quantile_method": "linear",
+    "signflip_draws": 100000,
+    "holm_family_size": 21,
+    "paired_tests": "two-sided; df=29; complete trajectories conditional on fixed initial design"
+  }
+}

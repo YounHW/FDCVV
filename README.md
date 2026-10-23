@@ -27,8 +27,10 @@ Validated with MATLAB R2022b on Windows. Full numerical runs use Optimization
 Toolbox (`fmincon`), Global Optimization Toolbox (`MultiStart`) and Statistics
 and Machine Learning Toolbox (`lhsdesign`, distance functions). A serial run
 does not require Parallel Computing Toolbox. Version and toolbox details are
-recorded in the validation reports. Source code is MATLAB; Python is optional
-for the standard-library checksum verifier.
+recorded in the validation reports. Sampling code is MATLAB. Python 3.11 with
+NumPy, pandas and SciPy reconstructs the archived numerical statistics;
+`requirements-statistics.txt` gives the tested versions. The checksum verifier
+uses only Python's standard library.
 
 ## Original framework dependency
 
@@ -118,8 +120,59 @@ An existing result directory is never overwritten. Files include launch inputs,
 model history, native convergence metrics, common-test convergence metrics and
 an acceptance record. FDCVV also saves `trace_XX.mat` with the selected point,
 regional winners, fast scores, K, lambda and RNG state. Common-test NRMSE uses
-the predicted response range; the FE tables use the observed validation range.
+the fixed true-response range and is exported as `true_nrmse`.
+The same denominator is used for every method and stage within a benchmark.
+`common_nrmse` retains the legacy prediction-range definition, and
+`native_convergence.csv` retains the original framework exports.
+The FE tables use the observed validation-response range.
 Saved data reports remain unchanged when a new trajectory is run.
+
+## Reconstruct numerical statistics
+
+Run the reporting-metric check in MATLAB; this does not fit a model:
+
+```matlab
+CHECK_COMMON_METRICS
+```
+
+Reconstruct the numerical tables from the saved run-level RMSE and fixed
+test responses:
+
+```sh
+python -m pip install -r requirements-statistics.txt
+python REBUILD_STATISTICS.py --check
+```
+
+Outputs are written to `results/rebuilt_statistics`, leaving the supplied data
+unchanged. They include baseline endpoint and convergence summaries, ablation
+effects and Holm corrections, paired-bootstrap intervals, the weight grid and
+stopping summaries. The check compares all nine affected numerical tables with
+the supplied exports. No model fitting or new function evaluations are needed.
+Resampling seeds, draw counts, input hashes and software versions are recorded
+in the generated `verification.json`. The statistical unit is a complete
+trajectory, conditional on the fixed initial design. Technical timing repeats
+are reported separately.
+
+The primary numerical field is `true_nrmse = common_rmse / (max(truth)-min(truth))`.
+It is a dimensionless fraction; multiply by 100 to report percent.
+`data/normalization_protocol.json` records the fixed denominators and test-set
+hashes. The legacy `common_nrmse` and `native_nrmse` fields remain available for
+reading historical exports and are not used as the primary numerical metric.
+
+## Configuration development and shared trajectories
+
+`development/README.md` explains the earlier weight screening, subsequent K
+schedule comparisons and later sensitivity grid. `development/stage_index.csv`
+links each stage to its configurations, run identifiers, criterion and archived
+records. The earlier weight criterion compares benchmark-wise mean RMSE with
+the original `(0.25,0.20)` setting and takes their geometric mean.
+
+The same 90 FDCVV trajectories (30 per benchmark, identifiers 106-135) are used
+in the six-method baseline, the Full ablation configuration and the retained
+weight-grid cell. `development/trajectory_reuse90.csv` maps these shared records.
+Some trajectories participated in parameter and schedule development. No separate
+confirmation experiment was performed after the final configuration was fixed.
+The later maximum-gap statistic describes sensitivity under the adopted schedule.
 
 ## Data and provenance
 
@@ -153,8 +206,9 @@ has R2 = 0.93225, RMSE = 11.9011 um and NRMSE = 8.5035%.
 The update includes all 26 stage summaries, predictions at six stages,
 paired-bootstrap intervals, model/data binding records and prediction timings.
 The median time to evaluate all ten validation inputs is 0.730953 ms;
-model fitting took 4.9934929 s separately. The algorithm implementation and
-numerical benchmark results retain their verified versions.
+model fitting took 4.9934929 s separately. The algorithm implementation retains
+its verified version. Numerical reporting now uses the fixed true-response
+normalization described above; raw RMSE, R2 and saved trajectories are unchanged.
 
 See `data/README.md` for units, statistical definitions and timing scope.
 Run `python VERIFY_FILES.py` after downloading or cloning to verify all

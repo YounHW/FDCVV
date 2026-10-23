@@ -1,0 +1,26 @@
+{
+  "K432_8_15": {
+    "first_completed_additions": 8,
+    "second_completed_additions": 15,
+    "first_fraction": 0.26666666666666666,
+    "second_fraction": 0.5
+  },
+  "K432_12_15": {
+    "first_completed_additions": 12,
+    "second_completed_additions": 15,
+    "first_fraction": 0.4,
+    "second_fraction": 0.5
+  },
+  "K432_10_13": {
+    "first_completed_additions": 10,
+    "second_completed_additions": 13,
+    "first_fraction": 0.3333333333333333,
+    "second_fraction": 0.43333333333333335
+  },
+  "K432_10_17": {
+    "first_completed_additions": 10,
+    "second_completed_additions": 17,
+    "first_fraction": 0.3333333333333333,
+    "second_fraction": 0.5666666666666667
+  }
+}
